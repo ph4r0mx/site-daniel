@@ -1,12 +1,13 @@
 const express = require('express');
+const serverless = require('serverless-http');
 
 const app = express();
 
-app.get('/formations', (req, res) => {
+app.get('/api/formations', (req, res) => {
   res.json({
     status: 'OK',
-    message: 'Express fonctionne sur Netlify'
+    message: 'Express + Netlify fonctionnent'
   });
 });
 
-exports.handler = require('serverless-http')(app);
+module.exports.handler = serverless(app);
