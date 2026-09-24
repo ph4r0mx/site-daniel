@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS — Formations</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400&family=DM+Mono:wght@300;400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav id="navbar">
+  <a href="/" class="nav-logo">NEX<span>US</span></a>
+  <ul class="nav-links">
+    <li><a href="/formations.html" class="active">Formations</a></li>
+    <li><a href="/#apropos">À propos</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <div class="nav-auth" id="navAuth">
+    <a href="/login.html" class="btn-nav-login">Connexion</a>
+    <a href="/login.html?mode=register" class="btn-nav">Commencer →</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div style="font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;">— Catalogue complet</div>
+  <h1>Nos <em>formations</em><br>premium</h1>
+</div>
+
+<div class="filter-bar" id="filterBar">
+  <button class="filter-btn active" data-cat="Tout">Tout (9)</button>
+  <button class="filter-btn" data-cat="Marketing Digital">Marketing Digital</button>
+  <button class="filter-btn" data-cat="E-commerce">E-commerce</button>
+  <button class="filter-btn" data-cat="Trading">Trading</button>
+  <button class="filter-btn" data-cat="OFM IA">OFM IA</button>
+</div>
+
+<div class="formations-grid" id="formationsGrid">
+  <div style="text-align:center;padding:80px;color:var(--muted);grid-column:1/-1;">Chargement...</div>
+</div>
+
+<!-- Modal achat -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="modalContent"></div>
+    <div id="stripeBtn"></div>
+    <div id="stripeMsg" style="display:none;margin-top:16px;font-size:12px;text-align:center;color:var(--gold);"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-copy">© 2025 NEXUS Formations</div>
+  <div class="footer-links">
+    <a href="/">Accueil</a>
+    <a href="/login.html">Connexion</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</footer>
+
+<script src="/js/global.js"></script>
+<script>
+let allFormations = [];
+let userFormations = [];
+let currentFormation = null;
+
+async function loadFormations() {
+  try {
+    const token = getToken();
+    const [fRes, uData] = await Promise.all([
+      fetch('/api/formations').then(r => r.json()),
+      token ? fetch('/api/auth/me', { headers: { Authorization: 'Bearer ' + token } }).then(r => r.json()).catch(() => null) : null
+    ]);
+    allFormations = fRes;
+    if (uData && uData.formations) userFormations = uData.formations;
+
+    // URL params
+    const urlCat = new URLSearchParams(location.search).get('cat');
+    if (urlCat) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.cat === urlCat));
+      renderFormations(urlCat);
+    } else {
+      renderFormations('Tout');
+    }
+
+    // Check cancelled
+    if (new URLSearchParams(location.search).get('cancelled') === 'true') {
+      alert('Paiement annulé. Vous pouvez réessayer quand vous voulez.');
+      history.replaceState({}, '', '/formations.html');
+    }
+  } catch(e) {
+    document.getElementById('formationsGrid').innerHTML = '<div style="color:var(--muted);text-align:center;grid-column:1/-1;padding:60px">Erreur de chargement.</div>';
+  }
+}
+
+function renderFormations(cat) {
+  const list = cat === 'Tout' ? allFormations : allFormations.filter(f => f.categorie === cat);
+  const grid = document.getElementById('formationsGrid');
+  grid.innerHTML = list.map(f => {
+    const owned = userFormations.includes(f.id);
+    return `
+      <div class="f-card">
+        <div class="f-badge">${f.badge}</div>
+        <div class="f-icon">${f.image}</div>
+        <div class="f-cat">${f.categorie}</div>
+        <div class="f-titre">${f.titre}</div>
+        <p class="f-desc">${f.description}</p>
+        <div class="f-gratuit">🎁 ${f.modules_gratuits} module${f.modules_gratuits > 1 ? 's' : ''} gratuit${f.modules_gratuits > 1 ? 's' : ''}</div>
+        <div class="f-meta">
+          <span class="f-modules">${f.nb_modules} modules</span>
+          <span class="f-prix">${f.prix}€</span>
+        </div>
+        ${owned
+          ? `<button class="f-btn owned" onclick="location.href='/dashboard'">✓ Déjà acquise</button>`
+          : `<button class="f-btn" onclick="openModal('${f.id}')">Acheter cette formation</button>`
+        }
+      </div>
+    `;
+  }).join('');
+}
+
+document.getElementById('filterBar').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderFormations(btn.dataset.cat);
+});
+
+function openModal(id) {
+  if (!getToken()) {
+    if (confirm('Vous devez être connecté pour acheter. Se connecter maintenant ?')) {
+      window.location.href = '/login.html?mode=register';
+    }
+    return;
+  }
+  currentFormation = allFormations.find(f => f.id === id);
+  if (!currentFormation) return;
+
+  document.getElementById('modalContent').innerHTML = `
+    <div style="font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">${currentFormation.categorie}</div>
+    <div class="modal-title">${currentFormation.titre}</div>
+    <div class="modal-price">${currentFormation.prix}€</div>
+    <p class="modal-desc">${currentFormation.description}<br><br>
+      <strong style="color:var(--white)">${currentFormation.nb_modules} modules inclus</strong> — Accès à vie — Paiement sécurisé par carte
+    </p>
+  `;
+
+  document.getElementById('stripeBtn').innerHTML = `
+    <button onclick="payWithStripe('${id}')" style="width:100%;padding:18px;background:var(--gold);color:#000;border:none;font-family:'DM Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:background .3s;">
+      💳 Payer ${currentFormation.prix}€ par carte
+    </button>
+  `;
+  document.getElementById('stripeMsg').style.display = 'none';
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+async function payWithStripe(formationId) {
+  const btn = document.querySelector('#stripeBtn button');
+  btn.textContent = 'Redirection vers le paiement...';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch('/api/payment/create-checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + getToken() },
+      body: JSON.stringify({ formation_id: formationId })
+    });
+    const data = await res.json();
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      document.getElementById('stripeMsg').textContent = data.error || 'Erreur. Réessayez.';
+      document.getElementById('stripeMsg').style.display = 'block';
+      btn.textContent = `💳 Payer ${currentFormation.prix}€ par carte`;
+      btn.disabled = false;
+    }
+  } catch(e) {
+    document.getElementById('stripeMsg').textContent = 'Erreur réseau. Réessayez.';
+    document.getElementById('stripeMsg').style.display = 'block';
+    btn.textContent = `💳 Payer ${currentFormation.prix}€ par carte`;
+    btn.disabled = false;
+  }
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+}
+document.getElementById('modalOverlay').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeModal();
+});
+
+loadFormations();
+</script>
+</body>
+</html>

@@ -1,0 +1,3923 @@
+{
+  "mkt-standard": {
+    "1": {
+      "titre": "Introduction au Marketing Digital",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le marketing digital regroupe l'ensemble des actions marketing réalisées sur des supports numériques : sites web, réseaux sociaux, emails, moteurs de recherche, applications mobiles. Contrairement au marketing traditionnel, le digital permet de cibler précisément votre audience, mesurer chaque action en temps réel et optimiser vos campagnes à moindre coût."
+        },
+        {
+          "type": "titre",
+          "texte": "Les 5 piliers du Marketing Digital"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "SEO — Référencement naturel sur Google",
+            "SEA — Publicité payante (Google Ads, Meta Ads)",
+            "Social Media — Présence sur les réseaux sociaux",
+            "Email Marketing — Communication par email",
+            "Content Marketing — Création de contenu de valeur"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les KPIs essentiels à connaître"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "KPI",
+            "Définition"
+          ],
+          "lignes": [
+            [
+              "Trafic",
+              "Nombre de visiteurs sur votre site"
+            ],
+            [
+              "Taux de conversion",
+              "% de visiteurs qui achètent"
+            ],
+            [
+              "CPL",
+              "Coût par lead (contact qualifié)"
+            ],
+            [
+              "CPA",
+              "Coût par acquisition (vente)"
+            ],
+            [
+              "ROI",
+              "Retour sur investissement"
+            ],
+            [
+              "CTR",
+              "Taux de clic sur une publicité"
+            ]
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Comment construire votre première stratégie"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Définir vos objectifs (notoriété, leads, ventes)",
+            "Identifier votre cible (âge, centres d'intérêt, problèmes)",
+            "Choisir vos canaux (là où votre cible se trouve)",
+            "Créer votre contenu (adapté à chaque canal)",
+            "Mesurer et ajuster (analyser les résultats chaque semaine)"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Remplissez votre fiche stratégie",
+          "items": [
+            "Mon produit/service : _______________",
+            "Mon client idéal : _______________",
+            "Son problème principal : _______________",
+            "Les canaux où il se trouve : _______________",
+            "Mon objectif dans 3 mois : _______________"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "titre": "Créer votre identité de marque",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Avant de faire du marketing, vous devez savoir QUI vous êtes. Une marque forte crée de la confiance, justifie des prix plus élevés et fidélise les clients."
+        },
+        {
+          "type": "titre",
+          "texte": "Les 4 composantes de votre identité"
+        },
+        {
+          "type": "carte",
+          "titre": "1. Le nom de marque",
+          "items": [
+            "Court, mémorisable, facile à prononcer",
+            "Disponible en nom de domaine (.fr ou .com)",
+            "Vérifiez qu'il n'est pas déjà déposé (INPI)"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "2. Le logo et la charte graphique",
+          "items": [
+            "2-3 couleurs maximum",
+            "Une police principale + une police secondaire",
+            "Outils gratuits : Canva, Looka"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "3. Le ton éditorial",
+          "items": [
+            "Formel ou décontracté ?",
+            "Tutoyement ou vouvoiement ?",
+            "Restez cohérent sur TOUS vos canaux"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "4. Le positionnement",
+          "items": [
+            "Complétez : Je suis la seule marque qui [bénéfice unique] pour [cible] qui veulent [désir]"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "La psychologie des couleurs"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Couleur",
+            "Émotion",
+            "Secteurs"
+          ],
+          "lignes": [
+            [
+              "Bleu",
+              "Confiance, sérieux",
+              "Finance, tech"
+            ],
+            [
+              "Rouge",
+              "Urgence, passion",
+              "Alimentation, promo"
+            ],
+            [
+              "Vert",
+              "Nature, santé",
+              "Bio, bien-être"
+            ],
+            [
+              "Or/Noir",
+              "Luxe, premium",
+              "Mode, bijoux"
+            ],
+            [
+              "Orange",
+              "Énergie, créativité",
+              "Sport, startup"
+            ]
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Créez votre moodboard sur Canva",
+          "items": [
+            "Choisissez 3 couleurs pour votre marque",
+            "Choisissez 2 polices (titre + corps)",
+            "Rédigez votre phrase de positionnement",
+            "Définissez 5 mots qui décrivent votre marque"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "titre": "Les bases du SEO",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le SEO (Search Engine Optimization) permet d'apparaître en tête des résultats Google sans payer. Un bon SEO vous apporte du trafic gratuit et qualifié 24h/24."
+        },
+        {
+          "type": "titre",
+          "texte": "La recherche de mots-clés"
+        },
+        {
+          "type": "carte",
+          "titre": "Outils gratuits",
+          "items": [
+            "Google Search Console",
+            "Ubersuggest (3 recherches/jour gratuit)",
+            "AnswerThePublic",
+            "Google Suggest (suggestions automatiques)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les 3 types de mots-clés"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Mots-clés courts : 'marketing digital' (très concurrencés)",
+            "Mots-clés longue traîne : 'comment faire du marketing digital pour une boutique' (moins concurrencés, plus convertissants)",
+            "Mots-clés locaux : 'agence marketing digital Paris' (géolocalisés)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "L'optimisation On-Page"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Balise Title : mot-clé principal + nom de marque (60 caractères max)",
+            "Meta Description : résumé accrocheur (155 caractères max)",
+            "H1 : un seul par page, contient le mot-clé",
+            "H2/H3 : structure le contenu",
+            "Images : nommées et avec balise ALT",
+            "URL : courte et lisible (pas de chiffres)"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Pour votre site, listez",
+          "items": [
+            "5 mots-clés principaux de votre activité",
+            "3 mots-clés longue traîne pour chacun",
+            "Vérifiez que votre H1 contient votre mot-clé principal"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "titre": "Email Marketing Débutant",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "L'email marketing génère en moyenne 42€ pour chaque euro investi. Contrairement aux réseaux sociaux, votre liste email vous appartient — personne ne peut vous la supprimer."
+        },
+        {
+          "type": "titre",
+          "texte": "Outils gratuits pour commencer"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Mailchimp (jusqu'à 500 contacts gratuits)",
+            "Brevo (anciennement Sendinblue — 300 emails/jour gratuits)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Comment collecter des emails"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Formulaire sur votre site",
+            "Lead magnet (PDF, guide, checklist offert)",
+            "Pop-up de sortie",
+            "Concours/jeux"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Structure d'un email qui convertit"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Objet : court, intrigant, personnalisé (max 50 caractères)",
+            "Préheader : complète l'objet (70 caractères)",
+            "Introduction : accrocher en 2 lignes",
+            "Corps : une seule idée principale",
+            "CTA : un seul bouton d'action clair",
+            "Signature : professionnelle avec photo"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Votre première séquence automatique"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Email 1 (immédiat) : Bienvenue + livraison du lead magnet",
+            "Email 2 (J+2) : Votre histoire, votre pourquoi",
+            "Email 3 (J+4) : Contenu de valeur (conseil utile)",
+            "Email 4 (J+7) : Témoignage client + offre douce"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Exercice pratique",
+          "items": [
+            "Rédigez l'objet de vos 4 premiers emails de bienvenue",
+            "Créez votre compte Mailchimp ou Brevo",
+            "Configurez votre formulaire de capture sur votre site"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "titre": "Analyser vos résultats",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Installez Google Analytics 4 sur votre site (gratuit). Il vous permet de suivre vos visiteurs, pages les plus vues, taux de rebond et sources de trafic."
+        },
+        {
+          "type": "titre",
+          "texte": "Les métriques à surveiller chaque semaine"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Métrique",
+            "Objectif"
+          ],
+          "lignes": [
+            [
+              "Sessions",
+              "+10% par mois"
+            ],
+            [
+              "Taux de conversion",
+              "> 2%"
+            ],
+            [
+              "Pages/session",
+              "> 2"
+            ],
+            [
+              "Durée moyenne",
+              "> 2 min"
+            ],
+            [
+              "Source de trafic",
+              "Diversifiée"
+            ]
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Votre tableau de bord simple"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Trafic de la semaine",
+            "Leads générés",
+            "Ventes réalisées",
+            "Canal qui performe le mieux",
+            "Action à améliorer cette semaine"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Exercice pratique",
+          "items": [
+            "Installez Google Analytics 4 sur votre site",
+            "Identifiez votre page la plus visitée",
+            "Identifiez votre source de trafic principale",
+            "Créez votre tableau de bord hebdomadaire"
+          ]
+        }
+      ]
+    }
+  },
+  "ecom-standard": {
+    "1": {
+      "titre": "Choisir son modèle E-commerce",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Avant de créer votre boutique, vous devez choisir le bon modèle business. Ce choix détermine votre niveau d'investissement, vos marges et votre charge de travail quotidienne."
+        },
+        {
+          "type": "titre",
+          "texte": "Les 4 modèles E-commerce"
+        },
+        {
+          "type": "carte",
+          "titre": "1. Dropshipping",
+          "items": [
+            "Vous vendez sans stock — le fournisseur expédie directement",
+            "Investissement initial quasi nul",
+            "Marges faibles (15-30%) mais risque limité",
+            "Idéal pour tester des produits rapidement"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "2. Print-on-Demand",
+          "items": [
+            "Produits personnalisés (t-shirts, mugs, affiches) imprimés à la commande",
+            "Aucun stock à gérer",
+            "Marges moyennes (20-40%)",
+            "Idéal pour les créatifs et artistes"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "3. Produits physiques en stock",
+          "items": [
+            "Vous achetez et stockez vos produits",
+            "Marges élevées (40-70%)",
+            "Nécessite un investissement initial",
+            "Idéal pour construire une vraie marque"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "4. Produits digitaux",
+          "items": [
+            "Formations, ebooks, templates, logiciels",
+            "Marge à 90-100% (pas de coût de production répété)",
+            "Livraison instantanée automatique",
+            "Idéal pour les experts et créateurs de contenu"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Comment choisir votre modèle ?"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Critère",
+            "Dropshipping",
+            "Print-on-Demand",
+            "Stock",
+            "Digital"
+          ],
+          "lignes": [
+            [
+              "Budget démarrage",
+              "< 500€",
+              "< 200€",
+              "2000€+",
+              "< 300€"
+            ],
+            [
+              "Marges",
+              "15-30%",
+              "20-40%",
+              "40-70%",
+              "80-100%"
+            ],
+            [
+              "Complexité",
+              "Moyenne",
+              "Faible",
+              "Élevée",
+              "Faible"
+            ],
+            [
+              "Scalabilité",
+              "Élevée",
+              "Élevée",
+              "Limitée",
+              "Infinie"
+            ]
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Choisir votre modèle",
+          "items": [
+            "Quel est votre budget de démarrage ?",
+            "Avez-vous une expertise à monétiser en digital ?",
+            "Préférez-vous tester rapidement ou construire une marque durable ?",
+            "Notez votre modèle choisi et 3 raisons qui justifient ce choix"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "titre": "Trouver des produits gagnants",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Un produit gagnant résout un problème réel, a une demande existante mais une concurrence gérable, et offre une marge suffisante. Trouver ce produit est l'étape la plus importante de votre e-commerce."
+        },
+        {
+          "type": "titre",
+          "texte": "Les critères d'un produit gagnant"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Prix de vente entre 25€ et 100€ (point de prix optimal)",
+            "Marge brute minimum 30%",
+            "Difficile à trouver en grande surface",
+            "Résout un problème spécifique",
+            "Se présente bien en vidéo (pour les publicités)",
+            "Léger et facile à expédier"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Outils de recherche produit"
+        },
+        {
+          "type": "carte",
+          "titre": "Outils payants (les meilleurs)",
+          "items": [
+            "Minea — Analyse les publicités qui tournent sur Meta et TikTok",
+            "Adspy — Base de données des pubs Facebook",
+            "Dropispy — Spécialisé dropshipping",
+            "Ecomhunt — Sélection de produits tendance quotidienne"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Outils gratuits",
+          "items": [
+            "AliExpress — Onglet 'Top Selling' par catégorie",
+            "Amazon Best Sellers — Produits les plus vendus",
+            "Google Trends — Évolution de l'intérêt dans le temps",
+            "TikTok hashtag #TikTokMadeMeBuyIt — Produits viraux",
+            "Pinterest Trends — Tendances visuelles"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "La méthode de validation"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Trouvez 20 produits potentiels avec vos outils",
+            "Vérifiez la tendance sur Google Trends (en hausse = bon signal)",
+            "Calculez votre marge : Prix de vente - Coût produit - Livraison - Frais Shopify - Budget pub",
+            "Testez avec un budget publicitaire de 50-100€ avant de commander du stock",
+            "Si CPA < 30% du prix de vente → produit validé !"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Trouver votre premier produit",
+          "items": [
+            "Listez 10 produits trouvés sur Minea ou AliExpress Best Sellers",
+            "Pour chaque produit calculez la marge potentielle",
+            "Vérifiez la tendance Google sur 12 mois",
+            "Sélectionnez votre TOP 3 pour tester"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "titre": "Créer sa boutique Shopify",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Shopify est la plateforme e-commerce numéro 1 mondiale. Simple à configurer, robuste, et avec un écosystème d'applications immense. Voici comment créer une boutique professionnelle en moins d'une journée."
+        },
+        {
+          "type": "titre",
+          "texte": "Configuration initiale"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Créez votre compte sur shopify.com (essai gratuit 3 jours puis 1€/mois pendant 3 mois)",
+            "Choisissez votre nom de boutique (peut être différent de votre marque)",
+            "Configurez votre domaine personnalisé (12€/an environ)",
+            "Choisissez votre thème : Dawn (gratuit) ou investissez dans un thème premium (100-200€)",
+            "Configurez vos moyens de paiement : Shopify Payments + PayPal"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Créer une fiche produit qui convertit"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Titre : mot-clé principal + bénéfice (ex: 'Lampe LED Anti-Stress — Soulage les maux de tête')",
+            "Photos : minimum 5 photos, fond blanc + photos lifestyle + zoom détails",
+            "Description : problème → solution → bénéfices → caractéristiques techniques",
+            "Prix : affichez un prix barré pour créer une perception de promotion",
+            "Avis clients : importez des avis depuis AliExpress avec l'app Loox ou Judge.me"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les pages indispensables"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Page d'accueil : hero image + bestsellers + témoignages + garanties",
+            "À propos : votre histoire, votre mission",
+            "FAQ : répondez aux 10 objections les plus fréquentes",
+            "Politique de retour : claire et rassurante (30 jours minimum)",
+            "Contact : formulaire + email de support"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Apps Shopify essentielles (gratuites)"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "App",
+            "Fonction"
+          ],
+          "lignes": [
+            [
+              "DSers",
+              "Import produits AliExpress + traitement commandes"
+            ],
+            [
+              "Loox",
+              "Avis clients avec photos"
+            ],
+            [
+              "Privy",
+              "Pop-up email capture"
+            ],
+            [
+              "Tidio",
+              "Chat en direct"
+            ],
+            [
+              "PageSpeed",
+              "Optimisation vitesse"
+            ]
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Lancer votre boutique",
+          "items": [
+            "Créez votre compte Shopify et choisissez votre thème",
+            "Importez 5 produits avec des fiches complètes",
+            "Créez toutes les pages essentielles",
+            "Configurez vos moyens de paiement",
+            "Faites un test d'achat vous-même avant de lancer"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "titre": "Fournisseurs & Logistique",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "La logistique est souvent négligée par les débutants — c'est pourtant ce qui fait la différence entre un client satisfait et un remboursement. Voici comment professionnaliser votre supply chain dès le départ."
+        },
+        {
+          "type": "titre",
+          "texte": "Les sources d'approvisionnement"
+        },
+        {
+          "type": "carte",
+          "titre": "AliExpress — Pour débuter",
+          "items": [
+            "Milliers de fournisseurs disponibles",
+            "Délais longs (15-30 jours depuis Chine)",
+            "Qualité variable — commandez des échantillons TOUJOURS",
+            "Utilisez DSers pour automatiser les commandes"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Agents Sourcing — Pour scaler",
+          "items": [
+            "Un agent négocie pour vous avec les usines",
+            "Délais réduits (7-15 jours)",
+            "Meilleure qualité et prix",
+            "CJ Dropshipping, Sourcinbox, NovaDrop — agents recommandés",
+            "À utiliser dès 20-30 commandes/jour"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Alibaba — Pour le Private Label",
+          "items": [
+            "Achat en gros directement en usine",
+            "Minimum Order Quantity (MOQ) souvent 100-500 unités",
+            "Prix 3-5x moins cher qu'AliExpress",
+            "Délais de production 2-4 semaines + expédition"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Gérer les délais de livraison"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Soyez transparent sur les délais dans la FAQ et sur la fiche produit",
+            "Envoyez un email de confirmation avec tracking dès l'expédition",
+            "Utilisez une app de tracking (AfterShip) pour tenir le client informé",
+            "Proposez un remboursement immédiat si délai > 45 jours"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Gestion des retours"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Politique claire : 30 jours, remboursement ou échange",
+            "Pour le dropshipping : remboursez sans demander le retour (< 30€) — plus économique",
+            "Au-delà : demandez une photo du problème avant de rembourser",
+            "Créez un email template de réponse pour chaque situation"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Optimiser votre logistique",
+          "items": [
+            "Commandez des échantillons de vos 3 meilleurs produits",
+            "Comparez 3 agents sourcing (demandez des devis)",
+            "Rédigez votre politique de retour complète",
+            "Configurez AfterShip pour le tracking automatique"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "titre": "Premiers clients sans pub",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Avant d'investir dans la publicité payante, vous pouvez générer vos premières ventes avec des méthodes gratuites. Cela valide votre produit et vous donne des avis clients pour vos futures publicités."
+        },
+        {
+          "type": "titre",
+          "texte": "Réseaux sociaux organiques"
+        },
+        {
+          "type": "carte",
+          "titre": "TikTok (le plus puissant)",
+          "items": [
+            "Créez 3 vidéos/jour de votre produit",
+            "Format : unboxing, démonstration, avant/après, POV",
+            "Hashtags : #TikTokMadeMeBuyIt #produit #astuce",
+            "L'algorithme peut vous donner 10k-100k vues sans abonnés"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Instagram Reels",
+          "items": [
+            "Même contenu que TikTok, republié sur Instagram",
+            "Stories avec swipe-up si +10k abonnés",
+            "Collaborations avec des comptes dans votre niche"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Pinterest",
+          "items": [
+            "Idéal pour les produits visuels (décoration, mode, beauté)",
+            "Durée de vie d'un pin : 4 mois (vs 24h pour Instagram)",
+            "Créez 5-10 pins par produit avec des mots-clés"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Micro-influenceurs"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Ciblez des influenceurs entre 5k et 50k abonnés (meilleur engagement)",
+            "Proposez le produit gratuit en échange d'une story/vidéo",
+            "Taux d'acceptation : 20-30% en moyenne",
+            "ROI souvent supérieur aux grandes célébrités",
+            "Utilisez Heepsy ou Modash pour trouver les profils"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Groupes Facebook & Forums"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Rejoignez les groupes Facebook de votre niche cible",
+            "Apportez de la valeur pendant 2 semaines avant de mentionner votre produit",
+            "Reddit : r/[votre niche] — soyez authentique, pas commercial",
+            "Nextdoor pour les produits locaux"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Générer vos premières ventes",
+          "items": [
+            "Créez un compte TikTok dédié à votre boutique",
+            "Publiez 3 vidéos de démonstration produit cette semaine",
+            "Identifiez 10 micro-influenceurs dans votre niche et contactez-les",
+            "Rejoignez 5 groupes Facebook pertinents"
+          ]
+        }
+      ]
+    }
+  },
+  "ecom-premium": {
+    "1": {
+      "titre": "Ads E-commerce (Facebook + TikTok)",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "La publicité payante est le moteur de croissance de tout e-commerce sérieux. Facebook et TikTok Ads permettent de toucher des millions de personnes ciblées avec un budget maîtrisé. Voici la méthode complète pour lancer des campagnes rentables dès le premier mois."
+        },
+        {
+          "type": "titre",
+          "texte": "Structure de campagne Facebook Ads E-commerce"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Campagne 1 — Test créatifs : 1 ad set, audience large (18-45 ans, France), 5 créatifs différents, 10€/jour",
+            "Campagne 2 — Audiences froides : 3-5 ad sets avec intérêts différents, meilleur créatif, 20-50€/jour",
+            "Campagne 3 — Lookalike : basé sur vos acheteurs, 1%, 2%, 3% similarité",
+            "Campagne 4 — Remarketing : visiteurs page produit, abandon panier, vues vidéo 75%"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les créatifs qui vendent"
+        },
+        {
+          "type": "carte",
+          "titre": "Vidéo UGC (User Generated Content)",
+          "items": [
+            "Filmé style smartphone, horizontal ou vertical",
+            "Hook dans les 3 premières secondes",
+            "Montrez le problème PUIS la solution",
+            "Durée : 15-45 secondes",
+            "Taux de clic 2-4x supérieur aux visuels traditionnels"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Image statique",
+          "items": [
+            "Fond blanc avec le produit bien mis en valeur",
+            "Texte court et percutant sur l'image",
+            "Badge 'Livraison gratuite' ou '-50%'",
+            "Toujours tester vs vidéo — parfois surperforme"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Carousel",
+          "items": [
+            "Idéal pour montrer plusieurs angles du produit",
+            "Ou plusieurs produits complémentaires",
+            "Première image = hook le plus fort",
+            "Dernière image = CTA avec prix"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "TikTok Ads pour l'E-commerce"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Objectif : Conversions (pas trafic)",
+            "Format : In-Feed Video, 15-30 secondes",
+            "Budget minimum : 20€/jour pour laisser l'algo apprendre",
+            "Spark Ads : boostez vos meilleurs posts organiques",
+            "Ciblage : commencez broad (18-35 ans), laissez TikTok optimiser"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Métriques clés à surveiller"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Métrique",
+            "Objectif E-commerce"
+          ],
+          "lignes": [
+            [
+              "CTR",
+              "> 2% (image), > 3% (vidéo)"
+            ],
+            [
+              "CPC",
+              "< 0,80€"
+            ],
+            [
+              "Add to Cart Rate",
+              "> 5%"
+            ],
+            [
+              "Purchase Conversion Rate",
+              "> 2%"
+            ],
+            [
+              "ROAS",
+              "> 2,5x pour être rentable"
+            ],
+            [
+              "CPA",
+              "< 35% du prix de vente"
+            ]
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Lancer votre première campagne",
+          "items": [
+            "Créez 3 créatifs vidéo UGC de 15-30 secondes",
+            "Configurez votre Pixel + événement Purchase",
+            "Lancez une campagne test à 10€/jour avec 5 créatifs",
+            "Attendez 3-5 jours avant d'analyser (phase d'apprentissage)",
+            "Identifiez le meilleur créatif et scalez"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "titre": "Optimisation du taux de conversion",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le taux de conversion moyen d'un e-commerce est de 1-3%. Passer de 1% à 3% triple votre chiffre d'affaires sans augmenter votre budget publicitaire. C'est l'optimisation la plus rentable que vous puissiez faire."
+        },
+        {
+          "type": "titre",
+          "texte": "Optimiser la page produit"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Titre avec bénéfice principal (pas juste le nom du produit)",
+            "Photos haute qualité : min 7 photos (blanc + lifestyle + détails + dimensions)",
+            "Vidéo démonstration de 30-60 secondes",
+            "Prix barré pour créer la perception de promo",
+            "Stock limité affiché ('Plus que 8 en stock')",
+            "Livraison estimée précise ('Livré avant le vendredi 15 novembre')",
+            "Avis clients visibles immédiatement sous le prix (minimum 50 avis)",
+            "Questions/Réponses clients (FAQ intégrée à la fiche)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les éléments de réassurance"
+        },
+        {
+          "type": "carte",
+          "titre": "Les 5 garanties qui rassurent",
+          "items": [
+            "🔒 Paiement 100% sécurisé",
+            "🔄 Retour gratuit 30 jours",
+            "⭐ +1000 clients satisfaits",
+            "🚚 Livraison rapide (précisez le délai)",
+            "✅ Satisfait ou remboursé"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Optimiser le checkout"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Réduire le nombre d'étapes au minimum (idéalement 1 page)",
+            "Proposer PayPal Express (40% des acheteurs préfèrent PayPal)",
+            "Ajouter 'Buy Now Pay Later' (Klarna, Scalapay) — augmente le panier de 20-30%",
+            "Afficher les logos de sécurité (Visa, Mastercard, SSL)",
+            "Sauvegarder automatiquement le panier (cookie 30 jours)",
+            "Proposer la création de compte APRÈS l'achat (pas avant)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Upsells & Order Bumps"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Order Bump (case à cocher sur la page panier) : produit complémentaire à -50%",
+            "Post-Purchase Upsell (juste après le paiement) : 'Complétez votre achat avec...'",
+            "Email upsell J+3 : 'Les clients qui ont acheté X ont aussi aimé Y'",
+            "Apps Shopify : ReConvert, CartHook pour les upsells automatiques"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Optimiser votre conversion",
+          "items": [
+            "Installez Microsoft Clarity (gratuit) pour voir les heatmaps et enregistrements de session",
+            "Identifiez les 3 étapes où les visiteurs abandonnent le plus",
+            "Testez un A/B sur votre bouton 'Ajouter au panier' (couleur + texte)",
+            "Ajoutez les 5 éléments de réassurance sur votre fiche produit",
+            "Configurez un upsell post-achat avec ReConvert"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "titre": "Email & SMS Marketing E-commerce",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "L'email et le SMS sont les canaux avec le meilleur ROI en e-commerce. Les flows automatisés génèrent en moyenne 20-30% du chiffre d'affaires total d'une boutique sans coût publicitaire supplémentaire."
+        },
+        {
+          "type": "titre",
+          "texte": "Les flows indispensables sur Klaviyo"
+        },
+        {
+          "type": "carte",
+          "titre": "1. Abandon de panier (le plus important)",
+          "items": [
+            "Email 1 — 1h après : 'Vous avez oublié quelque chose ?' + photo produit",
+            "Email 2 — 24h après : Lever les objections (qualité, retours, sécurité)",
+            "Email 3 — 72h après : Offre -10% avec timer 24h",
+            "SMS 1 — 2h après : Court rappel avec lien direct",
+            "Taux de récupération moyen : 5-15% des paniers abandonnés"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "2. Bienvenue (nouveaux inscrits)",
+          "items": [
+            "Email 1 — Immédiat : Code promo de bienvenue -15%",
+            "Email 2 — J+2 : Histoire de la marque, vos valeurs",
+            "Email 3 — J+4 : Bestsellers + avis clients",
+            "Email 4 — J+7 : Contenu de valeur (guide, conseil)",
+            "Email 5 — J+10 : Dernière chance pour le code promo"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "3. Post-achat",
+          "items": [
+            "Email 1 — Confirmation immédiate : récap commande + suivi",
+            "Email 2 — J+3 : Comment utiliser/entretenir le produit",
+            "Email 3 — J+7 : Demande d'avis (Loox ou Judge.me)",
+            "Email 4 — J+14 : Produits complémentaires",
+            "Email 5 — J+30 : Programme de parrainage"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "4. Winback (clients inactifs)",
+          "items": [
+            "Clients sans achat depuis 90 jours",
+            "Email 1 : 'Vous nous manquez' + nouveautés",
+            "Email 2 : Offre exclusive -20%",
+            "Email 3 : Dernier email avant suppression (crée l'urgence)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "SMS Marketing — Les règles d'or"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Seulement pour les messages urgents (promo flash, abandon panier)",
+            "Maximum 2 SMS/mois par client",
+            "Toujours inclure le lien de désinscription",
+            "Heure d'envoi : 10h-12h ou 17h-19h uniquement",
+            "Taux d'ouverture : 98% (vs 25% pour l'email)"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Configurer vos flows",
+          "items": [
+            "Créez votre compte Klaviyo (gratuit jusqu'à 250 contacts)",
+            "Configurez le flow d'abandon panier (3 emails + 1 SMS)",
+            "Créez votre séquence de bienvenue (5 emails)",
+            "Connectez Klaviyo à votre boutique Shopify",
+            "Analysez vos métriques après 30 jours (open rate, clic rate, revenu généré)"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "titre": "Sourcing & Private Label",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le Private Label (marque propre) vous permet de vendre des produits génériques sous votre propre marque. C'est l'étape qui transforme une boutique dropshipping en une vraie entreprise avec une valeur à long terme."
+        },
+        {
+          "type": "titre",
+          "texte": "Passer du dropshipping au Private Label"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Identifiez votre produit bestseller (minimum 30 ventes/mois)",
+            "Trouvez l'usine qui fabrique ce produit sur Alibaba",
+            "Commandez 100-300 unités avec votre logo (MOQ négociable)",
+            "Créez votre packaging personnalisé (boîte, carte de remerciement)",
+            "Testez la qualité avec un petit stock avant de commander en gros",
+            "Augmentez progressivement les commandes selon les ventes"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Trouver et négocier avec les usines"
+        },
+        {
+          "type": "carte",
+          "titre": "Sur Alibaba",
+          "items": [
+            "Filtrez : Verified Supplier + Trade Assurance obligatoire",
+            "Contactez au moins 10 usines pour comparer",
+            "Demandez toujours des échantillons avant de commander",
+            "Négociez : prix, MOQ, délais, packaging personnalisé",
+            "Payez via Trade Assurance Alibaba (protection acheteur)"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Les points à négocier",
+          "items": [
+            "Prix unitaire selon volume (100, 500, 1000 unités)",
+            "MOQ (Minimum Order Quantity) — négociable à la baisse",
+            "Délais de production (standard 15-30 jours)",
+            "Packaging : boîte neutre ou personnalisée ?",
+            "Conditions de paiement : 30% avance, 70% à l'expédition"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Créer votre marque"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Nom de marque : court, mémorable, international si possible",
+            "Logo : investissez 50-200€ sur Fiverr ou 99designs",
+            "Packaging : boîte personnalisée + insert card (merci + QR code avis)",
+            "Site web dédié à la marque (pas générique)",
+            "Déposez votre marque à l'INPI (250-400€) si le projet est sérieux"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Lancer votre Private Label",
+          "items": [
+            "Identifiez votre bestseller actuel",
+            "Recherchez 10 usines sur Alibaba qui fabriquent ce produit",
+            "Contactez-les avec un message professionnel (template fourni dans la section ressources)",
+            "Commandez des échantillons à vos 3 meilleures usines",
+            "Comparez qualité, prix et réactivité avant de décider"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "titre": "Scaling & Automatisation",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Scaler un e-commerce signifie augmenter le chiffre d'affaires sans augmenter proportionnellement votre charge de travail. L'automatisation et la délégation sont les deux piliers de cette phase."
+        },
+        {
+          "type": "titre",
+          "texte": "Quand commencer à scaler ?"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "ROAS stable > 2,5x pendant au minimum 2 semaines",
+            "Au moins 30 commandes/jour",
+            "Processus de traitement des commandes rodé",
+            "Stock suffisant pour absorber une montée en charge",
+            "Trésorerie solide (les dépenses pub arrivent avant les recettes)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Scaling publicitaire"
+        },
+        {
+          "type": "carte",
+          "titre": "Scaling vertical (augmenter les budgets)",
+          "items": [
+            "Augmentez de 20-30% maximum tous les 3 jours",
+            "Au-delà de 300€/jour : créez une campagne dupliquée avec le nouveau budget",
+            "Surveillez le ROAS quotidiennement — si baisse > 20% pendant 3 jours : revenez en arrière",
+            "Budget journalier maximum : 5-10% de votre CA mensuel"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Scaling horizontal (nouvelles audiences)",
+          "items": [
+            "Dupliquez vos ad sets gagnants avec de nouvelles audiences",
+            "Testez de nouveaux marchés (Belgique, Suisse, Canada)",
+            "Créez des lookalike 1%, 2%, 3% basés sur vos meilleurs clients",
+            "Testez de nouveaux formats créatifs chaque semaine"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Automatiser les opérations"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Tâche",
+            "Outil d'automatisation"
+          ],
+          "lignes": [
+            [
+              "Traitement des commandes",
+              "DSers / AutoDS"
+            ],
+            [
+              "Emails clients",
+              "Klaviyo flows"
+            ],
+            [
+              "Tracking livraison",
+              "AfterShip"
+            ],
+            [
+              "Avis clients",
+              "Loox / Judge.me"
+            ],
+            [
+              "Rapports",
+              "Lifetimely / Triple Whale"
+            ],
+            [
+              "Service client",
+              "Gorgias + macros"
+            ]
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Déléguer et construire une équipe"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Premier recrutement : Service client (10-15€/h, freelance)",
+            "Deuxième recrutement : Media buyer (gestionnaire de pubs)",
+            "Troisième recrutement : VA (assistant virtuel) pour les tâches répétitives",
+            "Plateformes : Fiverr, Upwork, Indeed pour les CDI",
+            "Créez des SOPs (procédures) pour chaque tâche avant de déléguer"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Préparer le scaling",
+          "items": [
+            "Calculez votre ROAS actuel et vérifiez que vous êtes rentable",
+            "Identifiez les 3 tâches les plus chronophages à déléguer en premier",
+            "Créez une SOP pour le traitement des commandes",
+            "Dupliquez votre meilleure campagne avec un budget +30%"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "titre": "Comptabilité & Fiscalité E-commerce",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "La comptabilité est souvent négligée par les e-commerçants — jusqu'au jour où le fisc frappe à la porte. Mettre en place une gestion financière saine dès le départ vous évite des surprises désagréables."
+        },
+        {
+          "type": "titre",
+          "texte": "Structure juridique recommandée"
+        },
+        {
+          "type": "carte",
+          "titre": "Auto-entrepreneur (pour débuter)",
+          "items": [
+            "Simple et rapide à créer (gratuit en ligne)",
+            "Charges sociales : 22% du CA",
+            "Seuil : 188 700€ pour les activités commerciales",
+            "Idéal pour tester jusqu'à 50-70k€ de CA"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "SASU (pour scaler)",
+          "items": [
+            "Protection du patrimoine personnel",
+            "Optimisation fiscale possible (salaire + dividendes)",
+            "Charges sociales plus faibles sur les dividendes",
+            "Recommandé dès 70-80k€ de CA"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "TVA E-commerce — Ce qu'il faut savoir"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "TVA applicable dès le 1er euro de vente (auto-entrepreneur exonéré jusqu'à 36 800€)",
+            "OSS (One Stop Shop) : pour les ventes dans d'autres pays UE — seuil 10 000€",
+            "TVA import : pour les produits venant de Chine, vous devez déclarer et payer la TVA",
+            "Gardez TOUTES vos factures fournisseurs — elles sont déductibles"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les outils de gestion"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Quickbooks ou Pennylane : comptabilité automatisée",
+            "A2X : synchronisation Shopify → comptabilité",
+            "Stripe ou Shopify Payments : exports des transactions",
+            "Notion ou Google Sheets : suivi de trésorerie quotidien",
+            "Expert-comptable spécialisé e-commerce : indispensable dès 100k€/an"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Mettre en ordre vos finances",
+          "items": [
+            "Ouvrez un compte bancaire dédié à votre e-commerce (Qonto ou Shine)",
+            "Créez un tableau de suivi : CA / Dépenses pubs / Coût produits / Bénéfice net",
+            "Calculez votre seuil de rentabilité",
+            "Consultez un comptable pour choisir la bonne structure juridique"
+          ]
+        }
+      ]
+    }
+  },
+  "trading-standard": {
+    "1": {
+      "titre": "Introduction aux marchés financiers",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Les marchés financiers permettent d'acheter et vendre des actifs financiers pour générer des profits. Comprendre leur fonctionnement est la base absolue avant de placer un seul euro."
+        },
+        {
+          "type": "titre",
+          "texte": "Les principaux marchés"
+        },
+        {
+          "type": "carte",
+          "titre": "Forex (Foreign Exchange)",
+          "items": [
+            "Le plus grand marché du monde : 6 500 milliards $/jour",
+            "Échange de devises (EUR/USD, GBP/JPY...)",
+            "Ouvert 24h/24, 5j/7",
+            "Très liquide — idéal pour les débutants"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Crypto-monnaies",
+          "items": [
+            "Bitcoin, Ethereum et 10 000+ altcoins",
+            "Ouvert 24h/24, 7j/7 (week-end compris)",
+            "Très volatile — rendements élevés ET risques élevés",
+            "Marché encore jeune et peu régulé"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Indices boursiers",
+          "items": [
+            "CAC40 (France), S&P500 (USA), DAX (Allemagne)",
+            "Représente la performance d'un groupe d'entreprises",
+            "Moins volatils que les cryptos",
+            "Influencés par l'économie mondiale"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Matières premières",
+          "items": [
+            "Or, pétrole, gaz naturel, blé...",
+            "Valeurs refuges en temps de crise (or)",
+            "Influencées par la géopolitique et la météo",
+            "Bonne diversification de portefeuille"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Comment fonctionnent les marchés ?"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Acheteurs et vendeurs se rencontrent via un broker (courtier)",
+            "Le prix est déterminé par l'offre et la demande",
+            "Un pip = la plus petite variation de prix (0,0001 pour EUR/USD)",
+            "Le spread = différence entre prix d'achat et de vente (coût de transaction)",
+            "L'effet de levier : trader 10 000€ avec seulement 1 000€ de capital (risque amplifié)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Choisir son broker"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Broker",
+            "Marchés",
+            "Régulé",
+            "Pour qui"
+          ],
+          "lignes": [
+            [
+              "eToro",
+              "Forex, Crypto, Actions",
+              "Oui (AMF)",
+              "Débutants"
+            ],
+            [
+              "XTB",
+              "Forex, CFD, ETF",
+              "Oui (AMF)",
+              "Intermédiaires"
+            ],
+            [
+              "Interactive Brokers",
+              "Tout",
+              "Oui",
+              "Avancés"
+            ],
+            [
+              "Binance",
+              "Crypto uniquement",
+              "Partiel",
+              "Crypto traders"
+            ]
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Premiers pas",
+          "items": [
+            "Créez un compte démo sur XTB ou eToro (gratuit, argent virtuel)",
+            "Explorez l'interface et passez vos 10 premiers ordres en demo",
+            "Identifiez 3 paires de devises et suivez leur évolution pendant 1 semaine",
+            "Notez vos observations dans un journal de trading"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "titre": "Analyse technique — Bases",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "L'analyse technique consiste à lire les graphiques de prix pour prédire les mouvements futurs. C'est la compétence fondamentale de tout trader."
+        },
+        {
+          "type": "titre",
+          "texte": "Lire un graphique en chandeliers japonais"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Chaque chandelier représente une période (1min, 1h, 1 jour...)",
+            "Corps vert/blanc = prix a monté pendant la période",
+            "Corps rouge/noir = prix a baissé pendant la période",
+            "Mèche haute = le prix est monté puis redescendu",
+            "Mèche basse = le prix est descendu puis remonté",
+            "Doji (très petit corps) = indécision du marché"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Supports et Résistances"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Support : niveau de prix où les acheteurs arrivent en force (le prix rebondit vers le haut)",
+            "Résistance : niveau de prix où les vendeurs arrivent en force (le prix rebondit vers le bas)",
+            "Plus un niveau est testé plusieurs fois, plus il est fort",
+            "Quand un support est cassé, il devient une résistance (et vice versa)",
+            "Comment les tracer : reliez les creux (supports) et les sommets (résistances)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les tendances"
+        },
+        {
+          "type": "carte",
+          "titre": "Tendance haussière (Uptrend)",
+          "items": [
+            "Série de sommets et creux de plus en plus hauts",
+            "Achetez sur les pullbacks (retours vers la moyenne)",
+            "Ne vendez pas à contre-tendance"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Tendance baissière (Downtrend)",
+          "items": [
+            "Série de sommets et creux de plus en plus bas",
+            "Vendez (short) sur les rebonds",
+            "Ne buyez pas à contre-tendance"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Consolidation (Range)",
+          "items": [
+            "Prix oscillant entre un support et une résistance",
+            "Achetez au support, vendez à la résistance",
+            "Attendez la sortie du range pour les gros trades"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Figures chartistes essentielles"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Épaule-Tête-Épaule : signal de retournement baissier",
+            "Double Top : signal de retournement baissier",
+            "Double Bottom : signal de retournement haussier",
+            "Triangle : compression avant une explosion (haussière ou baissière)",
+            "Flag/Pennant : continuation de tendance après une pause"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Pratiquer l'analyse",
+          "items": [
+            "Sur TradingView (gratuit), tracez les supports et résistances sur EUR/USD en timeframe journalier",
+            "Identifiez la tendance actuelle de BTC/USD",
+            "Trouvez 3 figures chartistes sur des graphiques historiques",
+            "Tenez un journal avec vos analyses quotidiennes"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "titre": "Gestion du risque",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "La gestion du risque est ce qui sépare les traders qui survivent de ceux qui perdent tout. Vous pouvez avoir 40% de trades perdants et rester rentable grâce à une bonne gestion du risque."
+        },
+        {
+          "type": "titre",
+          "texte": "La règle des 1-2%"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Ne risquez jamais plus de 1-2% de votre capital sur un seul trade",
+            "Avec 1000€ de capital : risque maximum 10-20€ par trade",
+            "Cette règle vous protège d'une série de pertes consécutives",
+            "10 pertes d'affilée = perte de seulement 10-20% du capital (récupérable)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Le Stop-Loss — votre meilleur ami"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Ordre automatique qui clôture votre position si le prix va contre vous",
+            "À placer AVANT d'ouvrir une position, pas après",
+            "Placement technique : sous le support le plus proche (achat) ou au-dessus de la résistance (vente)",
+            "Ne JAMAIS déplacer son stop-loss pour 'laisser une chance au trade'",
+            "Un stop-loss respecté = une perte maîtrisée"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Le ratio Risk/Reward"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Ratio R/R",
+            "Win Rate nécessaire pour être rentable"
+          ],
+          "lignes": [
+            [
+              "1:1",
+              "50%"
+            ],
+            [
+              "1:2",
+              "34%"
+            ],
+            [
+              "1:3",
+              "25%"
+            ],
+            [
+              "1:4",
+              "20%"
+            ]
+          ]
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Visez minimum un ratio 1:2 (pour chaque euro risqué, vous gagnez 2 si vous avez raison)",
+            "Avec 1:2 et 40% de win rate → vous êtes rentable !",
+            "Comment calculer : Distance stop-loss / Distance take-profit"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Le Position Sizing"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Définissez votre risque en euros (ex: 1% de 1000€ = 10€)",
+            "Placez votre stop-loss techniquement (ex: 20 pips)",
+            "Calculez la taille de position : Risque en € / (Stop en pips × Valeur du pip)",
+            "Exemple EUR/USD : 10€ / (20 × 0,10€) = 5 micro-lots"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Maîtriser votre risque",
+          "items": [
+            "Calculez votre risque maximum par trade avec votre capital actuel",
+            "Sur vos 10 derniers trades (demo), calculez le ratio R/R moyen",
+            "Pratiquez le placement de stop-loss technique sur 5 configurations différentes",
+            "Créez une règle écrite : 'Je ne dépasse jamais X€ de perte par trade'"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "titre": "Votre première stratégie de trading",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Une stratégie de trading est un ensemble de règles précises qui définissent QUAND entrer, QUAND sortir, et COMBIEN risquer. Sans stratégie, vous gamblez. Avec une bonne stratégie testée, vous tradez."
+        },
+        {
+          "type": "titre",
+          "texte": "Les composantes d'une stratégie"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Marché tradé (EUR/USD, BTC, CAC40...)",
+            "Timeframe principal (15min, 1h, 4h, Daily)",
+            "Conditions d'entrée (signal précis et répétable)",
+            "Placement du stop-loss (règle fixe)",
+            "Objectif de profit / Take Profit (règle fixe)",
+            "Gestion du trade en cours (trailing stop ?)",
+            "Heures de trading (pas toutes les sessions se valent)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Stratégie débutant : Rebond sur support"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Identifiez un support fort sur timeframe 4h (testé 3+ fois)",
+            "Attendez que le prix revienne sur ce support",
+            "Sur timeframe 1h : cherchez un chandelier de confirmation haussier (engulfing, pin bar)",
+            "Entrez en achat au clôture du chandelier de confirmation",
+            "Stop-loss : 10 pips sous le point bas du chandelier",
+            "Take profit : prochaine résistance (ratio 1:2 minimum)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Le Backtesting"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Testez votre stratégie sur l'historique des prix AVANT de risquer de l'argent réel",
+            "Analysez au minimum 100 trades historiques",
+            "Calculez : win rate, ratio R/R moyen, drawdown maximum",
+            "Outil gratuit : TradingView en mode 'Bar Replay'",
+            "Attendez 1 mois de trading demo profitable avant de passer en réel"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Le journal de trading"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Notez CHAQUE trade : date, paire, direction, raison d'entrée, résultat",
+            "Analysez vos trades perdants pour identifier vos erreurs récurrentes",
+            "Photographiez vos graphiques avant et après",
+            "Revisualisez vos trades le week-end pour vous améliorer",
+            "Un journal honnête est votre meilleur outil de progression"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Créer votre stratégie",
+          "items": [
+            "Rédigez votre stratégie en 10 règles maximum (conditions d'entrée, SL, TP)",
+            "Backtestez sur 3 mois d'historique (minimum 30 trades)",
+            "Calculez les statistiques : win rate, R/R, profit factor",
+            "Tradez en démo pendant 30 jours en respectant strictement les règles",
+            "Passez en réel uniquement si démo profitable 2 mois consécutifs"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "titre": "Psychologie du trader",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "80% des traders perdent de l'argent. Pourtant, les stratégies gagnantes sont accessibles à tous. La différence ? La psychologie. Les émotions sont le principal ennemi du trader."
+        },
+        {
+          "type": "titre",
+          "texte": "Les émotions qui détruisent les traders"
+        },
+        {
+          "type": "carte",
+          "titre": "La peur",
+          "items": [
+            "Peur de perdre → ne pas prendre des trades valides",
+            "Peur de rater → entrer trop tôt sans confirmation",
+            "Peur du drawdown → fermer trop tôt ses positions gagnantes",
+            "Solution : confiance dans votre stratégie testée"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "La cupidité",
+          "items": [
+            "Surtrader (trop de positions en même temps)",
+            "Déplacer son take profit pour 'gagner plus'",
+            "Ignorer son stop-loss pour 'laisser une chance'",
+            "Solution : règles fixes et non négociables"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "La revanche",
+          "items": [
+            "Vouloir 'récupérer' une perte immédiatement",
+            "Doubler les positions après une perte (martingale)",
+            "Solution : règle stricte — max 2-3 trades par jour"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les biais cognitifs en trading"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Biais",
+            "Description",
+            "Solution"
+          ],
+          "lignes": [
+            [
+              "Confirmation",
+              "Ne voir que ce qui confirme son opinion",
+              "Chercher activement des contre-arguments"
+            ],
+            [
+              "Ancrage",
+              "Rester attaché à un prix d'entrée",
+              "Évaluer chaque situation objectivement"
+            ],
+            [
+              "Récence",
+              "Trop de poids aux événements récents",
+              "Analyser sur des échantillons larges"
+            ],
+            [
+              "FOMO",
+              "Fear Of Missing Out — entrer par peur de rater",
+              "Attendre toujours la confirmation"
+            ]
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Construire votre discipline"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Définissez vos règles par écrit et affichez-les visiblement",
+            "Arrêtez de trader après 2 pertes consécutives dans la journée",
+            "Ne tradez jamais quand vous êtes fatigué, stressé ou sous l'influence d'alcool",
+            "Méditation quotidienne : 10 min avant la session de trading",
+            "Journal émotionnel : notez votre état mental avant chaque trade",
+            "Ne regardez pas vos trades ouverts toutes les 5 minutes"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Travailler votre mental",
+          "items": [
+            "Identifiez votre principale émotion problématique (peur ou cupidité ?)",
+            "Écrivez vos 5 règles de trading non négociables",
+            "Pratiquez la méditation 10 min/jour pendant 30 jours",
+            "Analysez vos 5 pires trades : quelle émotion était à l'origine ?",
+            "Créez un rituel de trading : même heure, même état d'esprit"
+          ]
+        }
+      ]
+    }
+  },
+  "trading-premium": {
+    "1": {
+      "titre": "Smart Money Concepts (SMC)",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le Smart Money Concepts (SMC) est une approche du trading qui consiste à analyser et suivre les mouvements des 'gros joueurs' (banques, hedge funds, institutions). Ces acteurs représentent 90% des volumes — en comprenant leur logique, vous tradez avec eux, pas contre eux."
+        },
+        {
+          "type": "titre",
+          "texte": "La logique des institutions"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Les institutions ne peuvent pas entrer en position d'un coup (trop gros volume)",
+            "Elles créent de la liquidité en poussant le prix vers des niveaux où les stops des retail traders se trouvent",
+            "Elles 'chassent les stops' pour remplir leurs positions à de meilleurs prix",
+            "Comprendre cela change radicalement votre lecture du marché"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les concepts clés du SMC"
+        },
+        {
+          "type": "carte",
+          "titre": "Order Blocks (OB)",
+          "items": [
+            "Dernier chandelier impulsif avant un mouvement fort",
+            "Zone où les institutions ont placé leurs ordres",
+            "Le prix revient souvent tester ces zones (80% du temps)",
+            "Bullish OB : dernier chandelier baissier avant une montée forte",
+            "Bearish OB : dernier chandelier haussier avant une descente forte"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Fair Value Gaps (FVG)",
+          "items": [
+            "Déséquilibre créé par un mouvement trop rapide (3 bougies)",
+            "Zone non testée par le prix — le marché cherche à 'combler'",
+            "Bullish FVG : gap entre le haut de la bougie 1 et le bas de la bougie 3 (dans une montée)",
+            "Le prix revient souvent dans ces zones avant de repartir"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Liquidity Sweeps",
+          "items": [
+            "Les institutions 'liquident' les stops des retail traders avant de repartir",
+            "Equal Highs/Lows : niveaux où beaucoup de stops se trouvent",
+            "After the sweep : le vrai mouvement commence",
+            "Ne tradez jamais un Equal High/Low — attendez le sweep et le retournement"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "BOS & CHOCH",
+          "items": [
+            "Break of Structure (BOS) : cassure dans la même direction que la tendance (continuation)",
+            "Change of Character (CHOCH) : première cassure contre la tendance (alerte retournement)",
+            "BOS haussier = nouveaux hauts → tendance haussière confirmée",
+            "CHOCH = signal que la tendance change — cherchez des setups dans la nouvelle direction"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Setup SMC complet"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Identifiez la tendance sur HTF (Higher Time Frame — 4h ou Daily)",
+            "Repérez le dernier CHOCH et la structure actuelle",
+            "Attendez un retracement vers un OB ou FVG",
+            "Sur LTF (Lower Time Frame — 15min ou 5min), cherchez une confirmation (BOS dans la direction du HTF)",
+            "Entrez avec SL sous/sur l'OB, TP au prochain niveau de liquidité"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Pratiquer le SMC",
+          "items": [
+            "Analysez EUR/USD Daily : identifiez les 3 derniers Order Blocks majeurs",
+            "Sur GBP/USD 4h : tracez tous les FVG des 30 derniers jours",
+            "Identifiez 2 zones de liquidité (Equal Highs et Equal Lows) sur BTC/USD",
+            "Backtestez le setup OB sur 50 trades historiques"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "titre": "Price Action Avancée",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "La Price Action pure consiste à lire le marché sans indicateurs, uniquement avec les chandeliers et la structure du marché. C'est la méthode des traders professionnels qui cherchent une lecture objective et non biaisée."
+        },
+        {
+          "type": "titre",
+          "texte": "Lire la force du marché"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Chandeliers avec grande body et petites mèches = fort momentum",
+            "Chandeliers Doji ou avec mèches longues = indécision ou rejet",
+            "Séquence de chandeliers verts de plus en plus grands = accélération haussière",
+            "Réduction progressive de la taille des chandeliers = épuisement de tendance",
+            "Volume croissant sur une cassure = cassure valide"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les setups haute probabilité"
+        },
+        {
+          "type": "carte",
+          "titre": "Pin Bar (Hammer / Shooting Star)",
+          "items": [
+            "Longue mèche dans une direction, petit corps dans l'autre",
+            "Signal de rejet fort d'un niveau clé",
+            "Bullish Pin Bar (Hammer) au support = achat",
+            "Bearish Pin Bar (Shooting Star) à la résistance = vente",
+            "Validité augmentée si : sur support/résistance major, sur OB, confluence avec FVG"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Engulfing",
+          "items": [
+            "Un chandelier 'avale' le chandelier précédent",
+            "Bullish Engulfing : grand chandelier vert qui avale un rouge = signal haussier fort",
+            "Bearish Engulfing : grand chandelier rouge qui avale un vert = signal baissier fort",
+            "Plus efficace sur timeframe Daily ou 4h"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Inside Bar",
+          "items": [
+            "Chandelier dont le range est entièrement dans le chandelier précédent",
+            "Signal de consolidation avant une explosion",
+            "Tradez la cassure de la mère bougie (chandelier précédent)",
+            "Très efficace sur timeframes élevés (Daily, Weekly)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les confluences"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Une confluence = plusieurs signaux qui pointent dans la même direction",
+            "Plus de confluences = plus haute probabilité",
+            "Exemple de setup fort : Support majeur + Order Block + FVG + Bullish Engulfing + RSI oversold",
+            "Apprenez à attendre les confluences plutôt que de trader chaque signal isolé"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Multi-Timeframe Analysis (MTA)"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "HTF (Weekly/Daily) : Identifier la tendance principale et les niveaux clés majeurs",
+            "MTF (4h/1h) : Affiner les zones d'entrée, confirmer la structure",
+            "LTF (15min/5min) : Timing précis d'entrée avec confirmation Price Action",
+            "Ne jamais shorter sur LTF si HTF est haussier (sauf scalping)",
+            "La tendance HTF est le juge suprême"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Maîtriser la Price Action",
+          "items": [
+            "Analysez 20 graphiques quotidiens et identifiez les 3 setup types vus en formation",
+            "Pratiquez le MTA sur EUR/USD : analyse Weekly → Daily → 4h → 1h",
+            "Identifiez 5 confluences parfaites dans l'historique",
+            "Définissez vos 3 setups préférés et leurs règles exactes d'entrée"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "titre": "Trading algorithmique (débutant)",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "L'automatisation du trading permet de supprimer les émotions, de trader 24h/24 et de backtester précisément des stratégies. Pine Script (langage de TradingView) est l'outil idéal pour commencer sans être développeur."
+        },
+        {
+          "type": "titre",
+          "texte": "Introduction à Pine Script"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Langage simple, spécialement conçu pour le trading sur TradingView",
+            "Gratuit sur TradingView (compte basique suffit pour commencer)",
+            "Permet de créer des indicateurs personnalisés et des stratégies automatisées",
+            "Syntaxe claire et documentation complète disponible en anglais"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Votre premier indicateur — EMA Crossover"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "//@version=5",
+            "indicator('EMA Crossover', overlay=true)",
+            "ema20 = ta.ema(close, 20)",
+            "ema50 = ta.ema(close, 50)",
+            "plot(ema20, color=color.blue, linewidth=2)",
+            "plot(ema50, color=color.red, linewidth=2)",
+            "bullSignal = ta.crossover(ema20, ema50)",
+            "bearSignal = ta.crossunder(ema20, ema50)",
+            "plotshape(bullSignal, style=shape.triangleup, color=color.green, size=size.small)",
+            "plotshape(bearSignal, style=shape.triangledown, color=color.red, size=size.small)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Créer une stratégie backtestable"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "strategy() au lieu de indicator() pour activer le backtesting",
+            "strategy.entry() pour ouvrir une position",
+            "strategy.exit() pour fermer avec SL et TP",
+            "strategy.close() pour fermer manuellement",
+            "Résultats visibles dans l'onglet 'Rapport de stratégie' de TradingView"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Configurer des alertes automatiques"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "TradingView permet de déclencher des alertes sur vos indicateurs",
+            "Ces alertes peuvent envoyer des webhooks vers des bots de trading",
+            "Outils d'automatisation : 3Commas, Alertatron, Webhook sur MetaTrader",
+            "Pour crypto : connexion directe à Binance, Bybit via API"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Premiers pas en algo trading",
+          "items": [
+            "Créez votre compte TradingView et explorez l'éditeur Pine Script",
+            "Copiez l'indicateur EMA Crossover ci-dessus et testez-le",
+            "Modifiez les périodes (20/50) et observez l'impact",
+            "Créez une simple stratégie d'achat/vente basée sur le crossover et analysez les résultats"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "titre": "Crypto Trading & DeFi",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le marché crypto offre des opportunités uniques : volatilité élevée, marchés ouverts 24/7, nouvelles technologies. Mais aussi des risques spécifiques qu'il faut comprendre avant d'investir."
+        },
+        {
+          "type": "titre",
+          "texte": "Comprendre l'écosystème crypto"
+        },
+        {
+          "type": "carte",
+          "titre": "Bitcoin (BTC)",
+          "items": [
+            "Numérique or — réserve de valeur",
+            "Capitalisation dominante (40-50% du marché)",
+            "Pilote la tendance générale du marché crypto",
+            "Halving tous les 4 ans : réduction de moitié de la production → historiquement bullish"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Ethereum (ETH)",
+          "items": [
+            "Plateforme de smart contracts",
+            "Base de la DeFi et des NFTs",
+            "Proof of Stake depuis 2022 (The Merge)",
+            "Deuxième capitalisation du marché"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Altcoins",
+          "items": [
+            "Tout ce qui n'est pas BTC et ETH",
+            "Potentiels de gain élevés (x10, x100)",
+            "Risque de perte totale élevé",
+            "Liquidité plus faible — manipulation plus facile"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "L'analyse on-chain"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Exchange Flows : quand les baleines envoient des cryptos sur les exchanges → vente probable",
+            "SOPR (Spent Output Profit Ratio) : indicateur de sentiment",
+            "Fear & Greed Index : sentiment du marché (0=peur extrême, 100=avidité extrême)",
+            "Whale Alert : suivez les mouvements des grosses adresses",
+            "Outils : Glassnode, CryptoQuant, Santiment"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Introduction à la DeFi"
+        },
+        {
+          "type": "carte",
+          "titre": "Staking",
+          "items": [
+            "Bloquer vos cryptos pour sécuriser un réseau",
+            "Récompenses : 3-15% APR selon le protocole",
+            "Plateformes : Lido (ETH), Kraken, Binance Earn",
+            "Risque faible si protocole établi"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Liquidity Providing",
+          "items": [
+            "Fournir de la liquidité sur des DEX (Uniswap, Curve)",
+            "Récompenses en frais de transaction",
+            "Risque : Impermanent Loss (perte temporaire)",
+            "APR variable : 5-50% selon les pools"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Explorer la DeFi",
+          "items": [
+            "Créez un wallet MetaMask et sécurisez votre seed phrase",
+            "Achetez pour 50€ d'ETH sur Coinbase ou Binance",
+            "Transférez sur MetaMask et explorez Uniswap",
+            "Consultez Glassnode pour analyser l'on-chain BTC",
+            "Suivez Fear & Greed Index quotidiennement pendant 30 jours"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "titre": "Gestion de portefeuille",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Un portefeuille bien géré résiste aux crises, génère des rendements réguliers et vous permet de dormir tranquillement. La diversification et le rééquilibrage sont les outils clés."
+        },
+        {
+          "type": "titre",
+          "texte": "Principes de diversification"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Ne jamais mettre plus de 5-10% de son capital sur un seul actif",
+            "Diversifier entre classes d'actifs : actions, crypto, forex, commodités",
+            "Diversifier géographiquement : Europe, USA, émergents",
+            "Diversifier temporellement : DCA (Dollar Cost Averaging) — investir régulièrement",
+            "Corrélation : évitez des actifs qui montent et baissent ensemble"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Allocation recommandée pour un trader"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Profil",
+            "Capital de trading",
+            "Investissement LT",
+            "Cash"
+          ],
+          "lignes": [
+            [
+              "Conservateur",
+              "20%",
+              "60% (ETF, Or)",
+              "20%"
+            ],
+            [
+              "Modéré",
+              "40%",
+              "45% (ETF, Crypto LT)",
+              "15%"
+            ],
+            [
+              "Agressif",
+              "60%",
+              "30% (Crypto, Actions)",
+              "10%"
+            ]
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Le rééquilibrage"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Rééquilibrez tous les trimestres (vendre ce qui a trop monté, racheter ce qui a baissé)",
+            "Automatique : maintenez votre allocation cible (ex: 40% trading, 45% LT, 15% cash)",
+            "Rééquilibrage par seuil : agissez quand un actif dépasse ±5% de son allocation cible",
+            "Évitez le sur-trading lors des rééquilibrages (frais + impôts)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Fiscalité des gains"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "France : Flat Tax de 30% sur les plus-values (17,2% CSG + 12,8% IR)",
+            "Seuil d'imposition : dès le premier euro de cession (crypto)",
+            "Forex CFD : imposition sur les gains nets annuels",
+            "Tenue d'un journal : obligatoire pour calculer vos plus-values",
+            "Logiciel : Waltio ou Koinly pour les cryptos, simplifie la déclaration"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Gérer votre portefeuille",
+          "items": [
+            "Définissez votre allocation cible selon votre profil de risque",
+            "Listez tous vos actifs actuels et leur allocation en pourcentage",
+            "Calculez si vous devez rééquilibrer",
+            "Installez Waltio pour tracker vos plus-values crypto",
+            "Fixez une date trimestrielle pour votre revue de portefeuille"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "titre": "Vivre du trading — Business Plan",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Vivre du trading est possible mais demande une préparation sérieuse. Les prop firms ont révolutionné l'accès au trading professionnel en permettant de trader de gros capitaux sans les posséder."
+        },
+        {
+          "type": "titre",
+          "texte": "Les Prop Firms (Sociétés de trading pour compte propre)"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Vous tradez le capital de la firm, pas le vôtre",
+            "Partage des profits : 70-90% pour vous, 10-30% pour la firm",
+            "Vous payez un 'challenge' (100-600€) pour prouver vos capacités",
+            "Si vous réussissez : vous obtenez un compte financé (25k€ à 200k€)",
+            "FTMO, MyForexFunds, The5%ers, E8 Markets — les plus connues"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Réussir le Challenge FTMO"
+        },
+        {
+          "type": "carte",
+          "titre": "Phase 1 — Challenge",
+          "items": [
+            "Objectif profit : +10% (ex: +10 000€ sur compte 100k)",
+            "Drawdown maximum : -10% (ne perdez jamais plus de 10% du capital)",
+            "Durée minimum : 10 jours de trading",
+            "Pas de limite de temps maximum"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Phase 2 — Vérification",
+          "items": [
+            "Objectif profit : +5%",
+            "Mêmes règles de drawdown",
+            "Durée minimum : 10 jours",
+            "Plus facile que la phase 1"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Compte Financé",
+          "items": [
+            "Profit split : 80% pour vous",
+            "Retraits possibles dès les premiers profits",
+            "Scaling possible jusqu'à 2M€ avec FTMO",
+            "Règles permanentes : respecter le drawdown maximum"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les règles pour réussir"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Tradez exactement comme en demo — pas de prise de risque supplémentaire",
+            "Objectif journalier : +0,5% (atteignable sans stress)",
+            "Stop si vous perdez 2% dans la journée",
+            "Ne tradez pas pendant les nouvelles majeures (NFP, FOMC)",
+            "Documentez chaque trade pour analyser vos erreurs"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Construire un Track Record"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Minimum 6 mois de résultats consistants avant de vous considérer 'trader profitable'",
+            "Métriques à documenter : win rate, profit factor, max drawdown, Sharpe ratio",
+            "Myfxbook ou MetaStats pour la vérification publique de vos résultats",
+            "Un bon track record ouvre des portes : gérer l'argent d'investisseurs tiers"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Votre plan pour vivre du trading",
+          "items": [
+            "Calculez le capital minimum nécessaire pour vivre de vos trades (charges × 12 / rendement cible)",
+            "Passez un challenge FTMO en version gratuite (demo challenge)",
+            "Documentez vos 30 prochains trades avec toutes les métriques",
+            "Définissez votre timeline : dans combien de mois visez-vous un compte financé ?"
+          ]
+        }
+      ]
+    }
+  },
+  "ofm-standard": {
+    "1": {
+      "titre": "Introduction à l'OFM & l'IA",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "L'OFM (OnlyFans Management) consiste à gérer des comptes de créatrices de contenu en leur apportant votre expertise en marketing. Combiné à l'IA, ce modèle permet de gérer plusieurs comptes efficacement sans être soi-même créateur."
+        },
+        {
+          "type": "titre",
+          "texte": "Comprendre le marché OFM"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "OnlyFans génère plus de 5 milliards de dollars par an",
+            "Plus de 220 millions d'utilisateurs actifs sur la plateforme",
+            "La majorité des créatrices sont mal gérées — c'est votre opportunité",
+            "Le marché continue de croître de 30%+ par an"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Le modèle OFM — Comment ça fonctionne"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Vous recrutez une créatrice motivée",
+            "Vous gérez son compte : stratégie, marketing, messages fans",
+            "Vous prenez une commission sur ses revenus (20-50%)",
+            "L'IA automatise la gestion des messages",
+            "Plus vous avez de créatrices, plus vos revenus sont passifs"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les règles et cadre légal"
+        },
+        {
+          "type": "carte",
+          "titre": "Ce qui est obligatoire",
+          "items": [
+            "Contrat écrit avec chaque créatrice",
+            "Vérification d'âge : toutes les créatrices doivent avoir 18+ ans",
+            "Respect des CGU d'OnlyFans",
+            "Déclaration des revenus (auto-entrepreneur ou société)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Pourquoi l'IA change tout"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "ChatGPT rédige des messages personnalisés en quelques secondes",
+            "Midjourney génère des visuels promotionnels",
+            "Les chatbots automatisent les réponses standards",
+            "Une seule personne peut gérer 5-10 comptes avec les bons outils"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Préparer votre lancement",
+          "items": [
+            "Lisez intégralement les CGU d'OnlyFans",
+            "Créez un template de contrat simple",
+            "Définissez votre commission cible (30-40% recommandé)",
+            "Ouvrez une structure juridique (auto-entrepreneur minimum)"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "titre": "Trouver et recruter des créatrices",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le recrutement est la compétence la plus importante en OFM. Trouver des créatrices motivées et établir une relation de confiance dès le départ détermine 80% de votre succès."
+        },
+        {
+          "type": "titre",
+          "texte": "Où trouver des créatrices"
+        },
+        {
+          "type": "carte",
+          "titre": "Instagram",
+          "items": [
+            "Créatrices lifestyle avec 5k-50k abonnés",
+            "Cherchez les hashtags lifestyle, model, fitness",
+            "Profils avec forte interaction mais peu de monétisation",
+            "DM personnalisé — jamais de message générique"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "TikTok",
+          "items": [
+            "Créatrices avec audience jeune et engagée",
+            "Beaucoup conscientes d'OnlyFans mais ne savent pas démarrer",
+            "Approche : proposer votre expertise en marketing"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Reddit et Twitter",
+          "items": [
+            "r/onlyfansadvice — créatrices cherchant de l'aide",
+            "Twitter hashtags onlyfans creator — créatrices existantes à scaler",
+            "Approche directe possible mais concurrence élevée"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Script de prospection"
+        },
+        {
+          "type": "carte",
+          "titre": "Message Instagram efficace",
+          "items": [
+            "Bonjour [Prénom], j'ai vu ton contenu et je pense qu'il a un vrai potentiel commercial.",
+            "Je suis manager OFM et j'aide des créatrices à monétiser leur audience sans s'occuper du marketing.",
+            "Est-ce que tu serais ouverte à en discuter 15 minutes ?",
+            "Court, professionnel, non agressif — taux de réponse 10-20%"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Les éléments clés du contrat"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Durée et conditions de résiliation (préavis 30 jours)",
+            "Partage des revenus (votre commission en %)",
+            "Responsabilités de chaque partie",
+            "Confidentialité (NDA mutuel recommandé)",
+            "Droits sur le contenu (la créatrice garde ses droits)"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Recruter votre première créatrice",
+          "items": [
+            "Rédigez votre script de prospection personnalisé",
+            "Contactez 30 créatrices potentielles cette semaine",
+            "Préparez votre pitch pour l'appel de présentation",
+            "Rédigez votre contrat template"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "titre": "Gérer un compte avec l'IA",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "L'IA est le multiplicateur de force du manager OFM moderne. Elle permet de gérer plus de comptes, de personnaliser l'expérience des fans à grande échelle et d'optimiser chaque aspect du compte."
+        },
+        {
+          "type": "titre",
+          "texte": "ChatGPT pour les messages"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Créez un persona détaillé de la créatrice (ton, sujets, limites)",
+            "Donnez ce contexte à ChatGPT au début de chaque session",
+            "Demandez des réponses dans le style de la créatrice",
+            "Relisez toujours avant d'envoyer",
+            "Créez une bibliothèque de 50-100 réponses types"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Prompts efficaces"
+        },
+        {
+          "type": "carte",
+          "titre": "Pour les messages fans",
+          "items": [
+            "Tu es [nom de la créatrice], [description]. Un fan vient d'écrire : [message]. Réponds de manière [ton] en moins de 3 phrases. Reste dans le personnage.",
+            "Génère 10 réponses différentes à 'tu fais des customs ?' dans le style [description]"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Outils essentiels"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Outil",
+            "Utilisation",
+            "Prix"
+          ],
+          "lignes": [
+            [
+              "ChatGPT Plus",
+              "Messages + stratégie contenu",
+              "20€/mois"
+            ],
+            [
+              "Canva Pro",
+              "Visuels et stories",
+              "13€/mois"
+            ],
+            [
+              "Later",
+              "Planification posts",
+              "15€/mois"
+            ],
+            [
+              "Google Sheets",
+              "Suivi revenus",
+              "Gratuit"
+            ],
+            [
+              "Notion",
+              "Organisation",
+              "Gratuit"
+            ]
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Configurer vos outils",
+          "items": [
+            "Créez le document persona de votre créatrice",
+            "Générez 20 réponses types pour les questions fréquentes",
+            "Créez 10 captions Instagram avec ChatGPT",
+            "Configurez votre Notion de gestion"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "titre": "Marketing & Acquisition fans",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Sans fans, pas de revenus. La croissance de l'audience est votre responsabilité principale. Voici les stratégies les plus efficaces pour attirer des abonnés qualifiés."
+        },
+        {
+          "type": "titre",
+          "texte": "Reddit — Le canal d'acquisition n°1"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Lisez les règles de chaque subreddit avant de poster",
+            "Construisez votre karma avant de promouvoir",
+            "2-3 posts par jour maximum par subreddit",
+            "Ciblez les subreddits de niche de votre créatrice"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Twitter/X — La plateforme la plus permissive"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Activez le contenu adulte dans les paramètres",
+            "5-8 posts par jour (teasers + engagement + promotion)",
+            "Interactions avec les gros comptes de la niche",
+            "Retweet mutuel avec d'autres créatrices"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "TikTok — Organique uniquement"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "TikTok interdit le contenu adulte — mais accepte le lifestyle et la beauté",
+            "Objectif : rediriger vers Instagram ou lien bio",
+            "1 viral = des milliers d'abonnés OFM potentiels",
+            "Ne mentionnez jamais OnlyFans directement"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Collaborations S4S"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Shoutout for Shoutout : échange de promotion entre créatrices similaires",
+            "Coût : 0€ — juste de l'organisation",
+            "Exposez votre créatrice à une audience déjà qualifiée",
+            "Organisez 2-3 collaborations par semaine"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Lancer la croissance",
+          "items": [
+            "Créez les profils Reddit de votre créatrice",
+            "Établissez un calendrier de posts Twitter (5/jour)",
+            "Identifiez 10 créatrices pour des collaborations S4S",
+            "Créez un Linktree avec tous les liens"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "titre": "Finances & Organisation",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Une bonne organisation financière transforme un side hustle en vrai business. Voici comment structurer votre activité OFM pour la rendre durable et scalable."
+        },
+        {
+          "type": "titre",
+          "texte": "Comprendre les revenus OnlyFans"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "OnlyFans prend 20% de tous les revenus",
+            "Paiements hebdomadaires sur demande",
+            "Délai : 5-7 jours ouvrés après la demande",
+            "Votre commission est prélevée sur les revenus nets"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Exemple de calcul"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Revenus bruts",
+            "Commission OFM (20%)",
+            "Nets",
+            "Votre part (35%)",
+            "Part créatrice (65%)"
+          ],
+          "lignes": [
+            [
+              "5 000€",
+              "1 000€",
+              "4 000€",
+              "1 400€",
+              "2 600€"
+            ],
+            [
+              "10 000€",
+              "2 000€",
+              "8 000€",
+              "2 800€",
+              "5 200€"
+            ],
+            [
+              "20 000€",
+              "4 000€",
+              "16 000€",
+              "5 600€",
+              "10 400€"
+            ]
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Structure juridique"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Auto-entrepreneur pour commencer",
+            "Compte bancaire professionnel séparé (Qonto ou Shine)",
+            "Facturez chaque créatrice mensuellement",
+            "Gardez toutes les preuves de transactions"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Structurer votre business",
+          "items": [
+            "Créez votre auto-entreprise",
+            "Ouvrez un compte Qonto dédié",
+            "Créez votre Notion de gestion",
+            "Rédigez votre première facture mensuelle template"
+          ]
+        }
+      ]
+    }
+  },
+  "ofm-premium": {
+    "1": {
+      "titre": "Construire son agence OFM",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Passer de manager solo à propriétaire d'agence est un changement de mindset fondamental. Vous ne gérez plus des créatrices — vous gérez un business avec des systèmes, des équipes et des processus scalables."
+        },
+        {
+          "type": "titre",
+          "texte": "Structure d'une agence OFM"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Vous (fondateur) : stratégie, recrutement, management équipe",
+            "Chatters (1-2 par compte) : gestion des messages fans quotidiens",
+            "Social Media Manager : contenu Instagram, TikTok, Reddit",
+            "Comptable : facturation, suivi revenus",
+            "Objectif : 5-10 créatrices avec 3-4 personnes = 20-50k€/mois"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "SOPs — Standard Operating Procedures"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "SOP Onboarding créatrice : liste de 30 tâches",
+            "SOP Routine chatter : script matin, midi, soir",
+            "SOP Création contenu : brief → production → validation → publication",
+            "SOP Paiement mensuel : calcul → facture → virement",
+            "Sans SOPs : impossible de déléguer efficacement"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Recrutement des chatters"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Plateformes : LinkedIn, Facebook groupes OFM, Upwork",
+            "Profil idéal : empathique, bonne plume, disponible soirs et week-ends",
+            "Rémunération : 300-800€/mois selon volume + bonus performance",
+            "Formation : 1 semaine supervisée avant autonomie"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Construire votre agence",
+          "items": [
+            "Rédigez votre organigramme cible",
+            "Créez votre SOP d'onboarding créatrice",
+            "Rédigez votre offre d'emploi chatter",
+            "Définissez vos KPIs : créatrices, revenus totaux, revenu moyen"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "titre": "IA Avancée pour l'OFM",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "L'IA avancée va bien au-delà de ChatGPT pour les messages. Elle permet de créer des personnages entiers, d'automatiser des workflows complexes et d'analyser les données pour optimiser les performances."
+        },
+        {
+          "type": "titre",
+          "texte": "Créer un persona IA complet"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Un persona IA est un personnage fictif cohérent que l'IA joue de manière consistante",
+            "Éléments : prénom, âge, ville, personnalité, hobbies, ton, limites",
+            "Formez ChatGPT avec 2000-3000 mots de contexte détaillé",
+            "Testez la consistance avec 50 questions différentes"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Structure d'un mega-prompt"
+        },
+        {
+          "type": "carte",
+          "titre": "Template de mega-prompt",
+          "items": [
+            "Rôle : Tu es [nom], créatrice de [ville], [âge] ans",
+            "Personnalité : tu es [adjectifs], tu aimes [hobbies]",
+            "Ton : tu parles de manière [style]",
+            "Limites : tu ne parles jamais de [sujets interdits]",
+            "Format : réponses max 3 phrases, avec émojis"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Automatisation avec Make"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Nouveau fan → message de bienvenue automatique",
+            "Fan inactif 7j → message de réengagement",
+            "Stats hebdomadaires → rapport Google Sheets automatique",
+            "Post Reddit planifié → publication multi-subreddits"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Déployer l'IA avancée",
+          "items": [
+            "Créez le mega-prompt pour votre créatrice principale",
+            "Testez la consistance avec 30 questions",
+            "Configurez un scenario Make pour les bienvenues automatiques",
+            "Analysez 30 jours de stats avec ChatGPT"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "titre": "Scaling — Gérer 5+ créatrices",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Gérer 5 créatrices et plus nécessite des systèmes rigoureux. Sans organisation, vous serez débordé et la qualité baissera pour toutes."
+        },
+        {
+          "type": "titre",
+          "texte": "Tableau de bord Notion multi-créatrices"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Vue globale : toutes les créatrices avec revenus du mois",
+            "Statut de chaque compte : actif / en croissance / problème",
+            "Calendrier contenu de toutes les créatrices",
+            "Alertes : revenus en baisse 2 semaines consécutives"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Déléguer efficacement"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Un chatter = 1-2 comptes maximum",
+            "Brief quotidien de 15 min avec chaque chatter",
+            "Rapport journalier obligatoire : messages répondus, PPV vendus",
+            "Bonus mensuel si objectif atteint",
+            "Réunion hebdomadaire pour partager les meilleures pratiques"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "KPIs hebdomadaires"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "KPI",
+            "Objectif",
+            "Mesure"
+          ],
+          "lignes": [
+            [
+              "Nouveaux abonnés",
+              "+50 minimum",
+              "Dashboard OFM"
+            ],
+            [
+              "Revenus",
+              "En hausse vs S-1",
+              "Dashboard OFM"
+            ],
+            [
+              "Messages répondus",
+              "> 95%",
+              "Rapport chatter"
+            ],
+            [
+              "PPV vendus",
+              "+10 vs S-1",
+              "Dashboard OFM"
+            ],
+            [
+              "Taux désabonnement",
+              "< 5%",
+              "Dashboard OFM"
+            ]
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Préparer le scaling",
+          "items": [
+            "Créez votre tableau Notion multi-créatrices",
+            "Rédigez le template de rapport journalier chatters",
+            "Définissez le système de bonus mensuel",
+            "Créez un protocole de gestion de crise"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "titre": "Stratégies de monétisation avancées",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Les abonnements sont juste la base. Les managers expérimentés génèrent 50-70% de leurs revenus via des stratégies additionnelles."
+        },
+        {
+          "type": "titre",
+          "texte": "Pay Per View (PPV)"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "PPV = contenu spécial vendu aux abonnés existants",
+            "Prix : 5-20€ par PPV selon le contenu",
+            "Fréquence : 3-5 PPV par semaine",
+            "Teasez sur le feed gratuit → vendez en DM",
+            "Objectif : chaque abonné dépense 3-5x le prix d'abonnement en PPV"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Tips et pourboires"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Encouragez via des messages de remerciement chaleureux",
+            "Créez des tip goals publics pour du contenu spécial",
+            "Les fans whales peuvent représenter 20-40% des revenus totaux",
+            "Traitement VIP pour les meilleurs contributeurs"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Bundles et offres spéciales"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Bundle mensuel : accès à 20 contenus exclusifs pour 49€",
+            "Offre anniversaire : -30% pour les abonnés fidèles",
+            "Promotion flash 24h : pic d'abonnements garanti",
+            "Bundle PPV : 5 PPV pour le prix de 3"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Maximiser les revenus",
+          "items": [
+            "Calculez le revenu moyen par abonné actuel",
+            "Identifiez vos top 10% de fans (whales)",
+            "Créez un calendrier de 15 PPV pour le mois prochain",
+            "Lancez une promotion flash ce week-end"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "titre": "Personal Branding & Réputation",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Votre réputation en tant que manager est votre actif le plus précieux. Les meilleures créatrices choisissent leur manager — avoir une réputation solide attire les meilleures opportunités."
+        },
+        {
+          "type": "titre",
+          "texte": "Construire votre réputation"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Partagez les dashboards en temps réel avec vos créatrices",
+            "Payez toujours à temps — le retard détruit la confiance",
+            "Documentez vos résultats (screenshots anonymisés)",
+            "Partagez des conseils gratuits dans les communautés OFM",
+            "Créez du contenu LinkedIn sur votre expertise"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Présence en ligne"
+        },
+        {
+          "type": "carte",
+          "titre": "Ce que vous devez construire",
+          "items": [
+            "Profil LinkedIn comme Digital Talent Manager",
+            "Compte Twitter partageant vos insights",
+            "Site web avec vos services et résultats anonymisés",
+            "Témoignages de créatrices satisfaites"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Ce qu'il faut protéger",
+          "items": [
+            "Ne divulguez jamais l'identité de vos créatrices",
+            "Séparez vie personnelle et activité professionnelle",
+            "Utilisez email et numéro dédiés à votre agence",
+            "NDA mutuels avec toutes vos créatrices"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Gestion de crise"
+        },
+        {
+          "type": "carte",
+          "titre": "Ban de compte",
+          "items": [
+            "Contactez immédiatement le support OFM",
+            "Ayez toujours une sauvegarde du contenu",
+            "Préparez un compte backup sur Fansly ou MYM"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Bâtir votre réputation",
+          "items": [
+            "Créez votre profil LinkedIn de Digital Talent Manager",
+            "Demandez un témoignage à chaque créatrice satisfaite",
+            "Publiez votre premier post LinkedIn sur l'industrie",
+            "Créez une page de résultats anonymisés"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "titre": "Mentoring individuel (2 sessions)",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Votre accès au mentoring individuel est activé. Vous bénéficiez de 2 sessions de coaching personnalisé de 45 minutes chacune pour accélérer votre progression."
+        },
+        {
+          "type": "titre",
+          "texte": "Comment réserver vos sessions"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Envoyez un email à piidaniel3@gmail.com",
+            "Objet : MENTORING OFM PREMIUM",
+            "Indiquez votre prénom, situation actuelle et questions prioritaires",
+            "Une disponibilité vous sera proposée sous 48h",
+            "Sessions en visio (Google Meet ou Zoom)"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Comment préparer votre session"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Listez vos 5 problèmes les plus urgents",
+            "Préparez vos chiffres : revenus, créatrices, taux de conversion",
+            "Ayez vos outils de gestion ouverts",
+            "Définissez 3 actions concrètes à implémenter avant la 2ème session"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Sujets abordables"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Analyse de votre situation et blocages",
+            "Stratégie de recrutement créatrices",
+            "Optimisation de votre gestion quotidienne",
+            "Scaling vers 5, 10+ créatrices",
+            "Stratégies de monétisation avancées",
+            "Aspects juridiques et fiscaux",
+            "Recrutement et management de votre équipe"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Préparer votre première session",
+          "items": [
+            "Envoyez votre email de réservation cette semaine",
+            "Remplissez votre fiche de situation complète",
+            "Listez vos 5 plus gros blocages actuels"
+          ]
+        }
+      ]
+    }
+  },
+  "mkt-avance": {
+    "1": {
+      "titre": "Growth Hacking & Acquisition",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le Growth Hacking combine marketing, data et créativité pour faire croître un business rapidement. Dropbox, Airbnb et Uber ont explosé grâce à ces techniques."
+        },
+        {
+          "type": "titre",
+          "texte": "Les Viral Loops"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Un viral loop pousse vos utilisateurs à en recruter d'autres",
+            "Dropbox : 500 Mo gratuits par ami invité — +60% inscriptions",
+            "Uber : code parrain avec réduction pour les deux",
+            "Si K-factor > 1 : votre produit se propage seul"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "L'A/B Testing"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Testez une seule variable à la fois",
+            "Minimum 1000 visiteurs par version",
+            "Durée minimum : 2 semaines",
+            "Outils : Google Optimize, VWO, Optimizely"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Lancer votre growth",
+          "items": [
+            "Calculez votre K-factor actuel",
+            "Concevez votre programme de parrainage",
+            "Identifiez 3 éléments à A/B tester",
+            "Lancez un test sur votre prochain email"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "titre": "SEO Avancé & Link Building",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le SEO avancé combine technique, contenu et autorité. Maîtriser les facteurs les plus importants suffit pour dominer votre niche."
+        },
+        {
+          "type": "titre",
+          "texte": "E-E-A-T — Les 4 piliers"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Experience : montrez votre expérience directe",
+            "Expertise : démontrez votre maîtrise",
+            "Authoritativeness : soyez une référence reconnue",
+            "Trustworthiness : inspirez confiance"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Technique Skyscraper"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Trouvez un article très partagé dans votre niche",
+            "Créez un article encore meilleur et plus complet",
+            "Contactez tous ceux qui ont partagé l'original",
+            "Proposez votre article comme remplacement"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Construire votre autorité",
+          "items": [
+            "Audit complet avec Screaming Frog",
+            "Créez votre page pillar principale",
+            "Identifiez 10 sites pour du guest blogging",
+            "Créez votre profil HARO et répondez à 3 requêtes"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "titre": "Funnel de vente optimisé",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Un funnel bien conçu transforme des inconnus en clients fidèles. Chaque étape réduit la friction et augmente la conversion."
+        },
+        {
+          "type": "titre",
+          "texte": "Structure VSL (Video Sales Letter)"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Accroche : le problème douloureux",
+            "Agitation : les conséquences si rien ne change",
+            "Solution : votre produit",
+            "Preuves sociales : témoignages et chiffres",
+            "Offre détaillée : ce qui est inclus",
+            "Garantie : réduire le risque perçu",
+            "Urgence : pourquoi agir maintenant",
+            "CTA : action claire et unique"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Upsells et Downsells"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Upsell : offre supérieure juste après l'achat",
+            "Downsell : si refus, proposez quelque chose de moins cher",
+            "Order Bump : case à cocher sur la page de paiement"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Optimiser votre funnel",
+          "items": [
+            "Dessinez votre funnel TOFU-MOFU-BOFU",
+            "Rédigez votre page de vente en VSL",
+            "Créez 1 upsell et 1 order bump",
+            "Calculez votre taux de conversion actuel"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "titre": "Automation Marketing",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "L'automation vous permet de communiquer au bon moment avec le bon message, sans intervention manuelle. Un système bien configuré travaille pour vous 24h/24."
+        },
+        {
+          "type": "titre",
+          "texte": "Les séquences indispensables"
+        },
+        {
+          "type": "carte",
+          "titre": "Bienvenue (7 jours)",
+          "items": [
+            "J0 : Bienvenue + lead magnet",
+            "J1 : Votre histoire",
+            "J3 : Conseil pratique",
+            "J5 : Étude de cas client",
+            "J7 : Présentation de votre offre"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Abandon panier",
+          "items": [
+            "1h après : Vous avez oublié quelque chose ?",
+            "24h après : Lever les objections",
+            "72h après : Offre -10% avec timer 24h"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Le Lead Scoring"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Ouvrir un email : +1 point",
+            "Cliquer un lien : +3 points",
+            "Visiter la page de vente : +10 points",
+            "Dépasse 50 points : déclenchez une offre personnalisée"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Configurer vos automations",
+          "items": [
+            "Créez votre séquence de bienvenue sur Brevo",
+            "Configurez l'abandon panier (3 emails + 1 SMS)",
+            "Définissez votre système de lead scoring",
+            "Analysez vos métriques après 30 jours"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "titre": "Personal Branding Expert",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le personal branding transforme votre nom en marque. Quand on pense à votre sujet, on pense à vous."
+        },
+        {
+          "type": "titre",
+          "texte": "Les 3 piliers"
+        },
+        {
+          "type": "carte",
+          "titre": "Cohérence",
+          "items": [
+            "Même message sur tous les canaux",
+            "Même esthétique visuelle",
+            "Même ton éditorial partout"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Régularité",
+          "items": [
+            "1 post/jour sur LinkedIn",
+            "1 vidéo/semaine sur YouTube",
+            "1 newsletter/semaine"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Authenticité",
+          "items": [
+            "Partagez vos échecs autant que vos succès",
+            "Les gens s'identifient aux personnes vraies",
+            "Soyez humain, pas parfait"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Stratégie LinkedIn"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Optimisez votre bannière et résumé avec vos mots-clés",
+            "1 post par jour (carrousel, texte long, vidéo)",
+            "Commentez 10 posts d'influenceurs chaque jour",
+            "5 connexions personnalisées par jour",
+            "Newsletter LinkedIn hebdomadaire"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Construire votre personal brand",
+          "items": [
+            "Rédigez votre bio en 3 versions (Twitter, LinkedIn, site)",
+            "Créez votre calendrier éditorial 30 jours",
+            "Identifiez 5 podcasts où proposer votre candidature",
+            "Contactez 3 partenaires pour un webinaire croisé"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "titre": "Copywriting qui convertit",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Le copywriting est l'art d'écrire pour vendre. Les bons copywriters sont parmi les professionnels les mieux payés du digital."
+        },
+        {
+          "type": "titre",
+          "texte": "Les 3 frameworks"
+        },
+        {
+          "type": "carte",
+          "titre": "AIDA",
+          "items": [
+            "Attention : titre fort qui accroche",
+            "Intérêt : faits et statistiques pertinents",
+            "Désir : bénéfices concrets et émotions",
+            "Action : CTA clair et unique"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "PAS",
+          "items": [
+            "Problème : nommez-le précisément",
+            "Agitation : amplifiez la douleur ressentie",
+            "Solution : présentez votre réponse"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "STAR",
+          "items": [
+            "Situation : contexte de départ",
+            "Tâche : défi à relever",
+            "Action : ce qui a été fait",
+            "Résultat : chiffres concrets obtenus"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Titres qui fonctionnent toujours"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Comment [résultat] sans [obstacle]",
+            "X façons de [bénéfice] en [délai]",
+            "La vérité sur [sujet tabou]",
+            "Pourquoi [croyance commune] est fausse",
+            "[Chiffre]% des gens font cette erreur",
+            "Le secret des [experts] pour [résultat]"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Pratiquer le copywriting",
+          "items": [
+            "Réécrivez votre page d'accueil en PAS",
+            "Créez 10 titres avec les formules",
+            "Rédigez une étude de cas en storytelling STAR",
+            "Testez 2 versions de votre CTA en A/B"
+          ]
+        }
+      ]
+    }
+  },
+  "mkt-premium": {
+    "1": {
+      "titre": "Stratégie 360° & Positionnement",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Une stratégie 360° assure une expérience cohérente sur tous les touchpoints client. Elle maximise la valeur à vie de chaque client acquis."
+        },
+        {
+          "type": "titre",
+          "texte": "Analyse concurrentielle avancée"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Identifiez concurrents directs, indirects et de substitution",
+            "Analysez positionnement, canaux, prix et avis clients",
+            "SimilarWeb pour leur trafic estimé",
+            "Ahrefs ou Ubersuggest pour leurs backlinks"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Trouver votre Blue Ocean"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Quels facteurs pouvez-vous éliminer ?",
+            "Quels facteurs pouvez-vous réduire sous les standards ?",
+            "Quels facteurs pouvez-vous augmenter au-dessus des standards ?",
+            "Quels facteurs n'existent pas encore et pouvez-vous créer ?"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Roadmap 12 mois"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "M1-3 : Fondations (audit, tracking, contenu, pages clés)",
+            "M4-6 : Croissance (campagnes, automations, A/B tests)",
+            "M7-9 : Scaling (budgets, nouveaux canaux, partenariats)",
+            "M10-12 : Optimisation (bilan, réallocation, planification N+1)"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Définir votre stratégie",
+          "items": [
+            "Analysez 5 concurrents directs en tableau comparatif",
+            "Identifiez votre Blue Ocean",
+            "Rédigez votre ICP complet (minimum 2 pages)",
+            "Créez votre roadmap 12 mois avec KPIs mensuels"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "titre": "Google Ads Mastery",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Google Ads cible des personnes en intention d'achat active. C'est le canal d'acquisition le plus puissant pour générer des ventes rapidement."
+        },
+        {
+          "type": "titre",
+          "texte": "Structure du compte"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "Campagne Brand : votre nom de marque",
+            "Campagne Concurrents : noms des concurrents",
+            "Campagne Générique : mots-clés de votre catégorie",
+            "Campagne Performance Max",
+            "Campagne Remarketing"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Métriques à surveiller"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Métrique",
+            "Objectif"
+          ],
+          "lignes": [
+            [
+              "Quality Score",
+              "> 7/10"
+            ],
+            [
+              "CTR Search",
+              "> 5%"
+            ],
+            [
+              "Taux de conversion",
+              "> 3%"
+            ],
+            [
+              "ROAS",
+              "> 3x"
+            ],
+            [
+              "CPA",
+              "< 35% du prix de vente"
+            ]
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Optimisation hebdomadaire"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Ajoutez les termes non pertinents en négatifs",
+            "Augmentez les enchères sur les mots-clés performants",
+            "Pausez les annonces avec CTR < 1% après 500 impressions",
+            "Testez 3 nouvelles variantes d'annonces par mois"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Optimiser vos campagnes",
+          "items": [
+            "Créez la structure complète de votre compte",
+            "Rédigez 5 annonces RSA pour votre offre principale",
+            "Configurez vos audiences de remarketing",
+            "Créez votre tableau de reporting hebdomadaire"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "titre": "Meta Ads Expert",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Meta Ads touche 3,8 milliards d'utilisateurs. Contrairement à Google (intention), Meta fonctionne sur l'interruption — vous créez de la demande là où elle n'existe pas encore."
+        },
+        {
+          "type": "titre",
+          "texte": "Ciblage avancé"
+        },
+        {
+          "type": "carte",
+          "titre": "Audiences chaudes",
+          "items": [
+            "Visiteurs du site (7, 14, 30, 60 jours)",
+            "Vidéo views (25%, 50%, 75%, 95%)",
+            "Engagement page Facebook/Instagram",
+            "Liste clients uploadée"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Lookalike",
+          "items": [
+            "Basés sur vos meilleurs clients (acheteurs)",
+            "Commencez à 1-3% de similarité",
+            "Scalez vers 3-5% si ça performe"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Créatifs qui performent"
+        },
+        {
+          "type": "carte",
+          "titre": "Vidéo UGC",
+          "items": [
+            "Style smartphone naturel",
+            "Hook dans les 3 premières secondes",
+            "15-45 secondes idéalement",
+            "Taux de clic 2-4x supérieur aux images"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Lancer vos campagnes",
+          "items": [
+            "Configurez Pixel + Conversions API",
+            "Créez 3 audiences remarketing et 2 lookalike",
+            "Produisez 3 créatifs vidéo UGC",
+            "Lancez campagne test à 10€/jour — 5 créatifs"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "titre": "TikTok & YouTube Ads",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "TikTok et YouTube représentent ensemble 4 milliards d'utilisateurs. Ces plateformes offrent des CPM plus bas et des audiences moins saturées que Meta."
+        },
+        {
+          "type": "titre",
+          "texte": "TikTok Ads"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Règle d'or : ne faites pas des pubs, faites des TikToks",
+            "Hook visuel et sonore dans les 2 premières secondes",
+            "Durée idéale : 15-30 secondes",
+            "Spark Ads : boostez vos meilleurs posts organiques",
+            "Budget minimum : 20€/jour pour laisser l'algo apprendre"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "YouTube Ads"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "TrueView : payez seulement si vue > 30s ou clic",
+            "Bumper Ads : 6 secondes non-skippables — idéal notoriété",
+            "Ciblage chaînes concurrentes : touchez leurs abonnés",
+            "Discovery Ads : dans les résultats de recherche YouTube"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Lancer sur ces plateformes",
+          "items": [
+            "Créez 2 TikTok Ads UGC de 15-30s",
+            "Produisez une YouTube Ad de 60s (hook + problème + solution + CTA)",
+            "Configurez le ciblage chaînes concurrentes sur YouTube",
+            "Testez à 10€/jour sur chaque plateforme et comparez les CPL"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "titre": "Data & Analytics Avancé",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Celui qui comprend le mieux ses chiffres prend de meilleures décisions et croît plus vite. Les données sont votre avantage compétitif."
+        },
+        {
+          "type": "titre",
+          "texte": "Google Tag Manager"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Gérez tous vos pixels sans toucher au code",
+            "Trackez : scroll depth, clics, formulaires, vidéos",
+            "Configurez les événements de conversion personnalisés",
+            "Combiné à GA4 : tracking parfait du parcours client"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Looker Studio Dashboard"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Connectez GA4, Google Ads, Meta Ads, Search Console",
+            "Affichez : revenus, CAC par canal, LTV, ROAS, conversions",
+            "Actualisé automatiquement — partagez avec vos clients",
+            "Décisions basées sur données, pas sur instinct"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Attribution multi-touch"
+        },
+        {
+          "type": "tableau",
+          "colonnes": [
+            "Modèle",
+            "Description",
+            "Quand l'utiliser"
+          ],
+          "lignes": [
+            [
+              "Last Click",
+              "100% au dernier clic",
+              "Simple mais biaisé"
+            ],
+            [
+              "Linear",
+              "Réparti équitablement",
+              "Vue d'ensemble"
+            ],
+            [
+              "Data-Driven",
+              "IA de Google",
+              "Recommandé (400+ conversions/mois)"
+            ]
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Construire votre stack analytics",
+          "items": [
+            "Configurez GTM avec tous vos pixels et événements",
+            "Créez votre dashboard Looker Studio complet",
+            "Analysez vos cohortes dans GA4 sur 6 mois",
+            "Calculez votre LTV et CAC par canal"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "titre": "Vendre vos services Marketing",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Monétiser votre expertise est l'une des façons les plus rapides de générer des revenus importants. Les entreprises paient cher pour des résultats concrets."
+        },
+        {
+          "type": "titre",
+          "texte": "Vos 3 premières offres"
+        },
+        {
+          "type": "carte",
+          "titre": "Audit Marketing (300-800€)",
+          "items": [
+            "Analyser le digital d'une entreprise en 2-3 jours",
+            "Livrer un rapport de 20 pages + recommandations priorisées",
+            "Facile à vendre, rapide à produire, haute valeur perçue"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Gestion Réseaux Sociaux (500-2000€/mois)",
+          "items": [
+            "3 posts/semaine + stories + community management",
+            "Calendrier éditorial mensuel partagé",
+            "Rapport de performance mensuel"
+          ]
+        },
+        {
+          "type": "carte",
+          "titre": "Gestion Google/Meta Ads (500-1500€/mois + 10-20% budget)",
+          "items": [
+            "Setup complet des campagnes",
+            "Optimisation hebdomadaire",
+            "Dashboard partagé en temps réel avec le client"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Trouver vos premiers clients"
+        },
+        {
+          "type": "etapes",
+          "items": [
+            "S1 : Contactez 50 personnes de votre réseau",
+            "S2 : LinkedIn — 20 connexions/jour + message personnalisé",
+            "S3 : Cold email — 30 emails/jour aux TPE/PME",
+            "S4 : Rejoignez 5 groupes Facebook de chefs d'entreprise",
+            "S5 : Demandez des recommandations à vos premiers clients"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Lancer votre activité",
+          "items": [
+            "Rédigez vos 3 offres avec prix et livrables précis",
+            "Créez votre proposition commerciale PDF",
+            "Rédigez votre script de cold email",
+            "Contactez 10 entreprises cette semaine"
+          ]
+        }
+      ]
+    },
+    "7": {
+      "titre": "Consultation illimitée (1 mois)",
+      "sections": [
+        {
+          "type": "intro",
+          "texte": "Pendant 30 jours, envoyez vos questions, campagnes et stratégies à analyser directement par email."
+        },
+        {
+          "type": "titre",
+          "texte": "Comment utiliser votre accès"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Email : piidaniel3@gmail.com",
+            "Objet : CONSULTATION PREMIUM MARKETING - [votre prénom]",
+            "Réponse sous 24-48h ouvrées",
+            "Vous pouvez soumettre : campagnes Ads, pages de vente, stratégies SEO, dashboards"
+          ]
+        },
+        {
+          "type": "titre",
+          "texte": "Ce que vous pouvez soumettre"
+        },
+        {
+          "type": "liste",
+          "items": [
+            "Vos campagnes Google/Meta Ads pour review",
+            "Votre page de vente pour feedback copy",
+            "Votre stratégie SEO pour validation",
+            "Vos dashboards analytics pour analyse",
+            "Toute question stratégique liée à votre activité"
+          ]
+        },
+        {
+          "type": "exercice",
+          "texte": "Envoyer votre premier email",
+          "items": [
+            "Identifiez votre problème marketing principal cette semaine",
+            "Rassemblez les données pertinentes",
+            "Envoyez votre première question cette semaine"
+          ]
+        }
+      ]
+    }
+  }
+}

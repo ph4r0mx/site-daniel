@@ -1,0 +1,509 @@
+{
+  "users": [
+    {
+      "id": "84d176b5-427c-4fce-a7e6-09cd7ed9d29f",
+      "nom": "Daniel",
+      "email": "piidaniel3@gmail.com",
+      "password": "$2a$10$2Hs5sLB2oxj1ajhLop6S8ujpV6ncvpb0yOV00j8ClJ.lcsNGd8WO2",
+      "formations": [
+        "mkt-standard",
+        "mkt-avance",
+        "mkt-premium",
+        "ecom-standard",
+        "ecom-premium",
+        "trading-standard",
+        "trading-premium",
+        "ofm-standard",
+        "ofm-premium"
+      ],
+      "role": "owner",
+      "createdAt": "2026-07-18T14:29:27.174Z"
+    }
+  ],
+  "orders": [],
+  "formations": [
+    {
+      "id": "mkt-standard",
+      "categorie": "Marketing Digital",
+      "titre": "Marketing Digital — Standard",
+      "sous_titre": "Les fondamentaux pour lancer votre présence en ligne",
+      "prix": 50,
+      "formule": "standard",
+      "badge": "Populaire",
+      "image": "📊",
+      "description": "Maîtrisez les bases du marketing digital et posez les fondations d'une stratégie efficace.",
+      "modules_gratuits": 1,
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Introduction au Marketing Digital",
+          "duree": "45 min",
+          "contenu": "Comprendre l'écosystème digital, les canaux, les KPIs fondamentaux et comment construire votre première stratégie.",
+          "gratuit": true
+        },
+        {
+          "id": 2,
+          "titre": "Créer votre identité de marque",
+          "duree": "60 min",
+          "contenu": "Logo, charte graphique, ton éditorial, positionnement. Tout pour vous différencier sur le marché.",
+          "gratuit": false
+        },
+        {
+          "id": 3,
+          "titre": "Les bases du SEO",
+          "duree": "90 min",
+          "contenu": "Recherche de mots-clés, optimisation on-page, maillage interne. Apparaissez sur Google sans payer.",
+          "gratuit": false
+        },
+        {
+          "id": 4,
+          "titre": "Email Marketing — Débutant",
+          "duree": "50 min",
+          "contenu": "Créer une liste email, rédiger une newsletter, automatiser vos premiers envois avec Mailchimp.",
+          "gratuit": false
+        },
+        {
+          "id": 5,
+          "titre": "Analyser vos résultats",
+          "duree": "40 min",
+          "contenu": "Google Analytics 4, tableaux de bord, interpréter les données pour prendre de meilleures décisions.",
+          "gratuit": false
+        }
+      ]
+    },
+    {
+      "id": "mkt-avance",
+      "categorie": "Marketing Digital",
+      "titre": "Marketing Digital — Avancé",
+      "sous_titre": "Stratégies avancées pour scaler votre business",
+      "prix": 100,
+      "formule": "avance",
+      "badge": "Bestseller",
+      "image": "🚀",
+      "description": "Passez au niveau supérieur avec des stratégies avancées d'acquisition, de conversion et de fidélisation.",
+      "modules_gratuits": 2,
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Growth Hacking & Acquisition",
+          "duree": "80 min",
+          "contenu": "Techniques de croissance rapide, viral loops, referral marketing, A/B testing.",
+          "gratuit": true
+        },
+        {
+          "id": 2,
+          "titre": "SEO Avancé & Link Building",
+          "duree": "90 min",
+          "contenu": "Backlinks de qualité, audit technique, Core Web Vitals, stratégie de contenu pillar.",
+          "gratuit": true
+        },
+        {
+          "id": 3,
+          "titre": "Funnel de vente optimisé",
+          "duree": "70 min",
+          "contenu": "Concevoir un tunnel de conversion performant, pages de vente, upsells, downsells.",
+          "gratuit": false
+        },
+        {
+          "id": 4,
+          "titre": "Automation Marketing",
+          "duree": "85 min",
+          "contenu": "Klaviyo, HubSpot, ActiveCampaign. Automatisez votre acquisition et nurturing.",
+          "gratuit": false
+        },
+        {
+          "id": 5,
+          "titre": "Personal Branding Expert",
+          "duree": "60 min",
+          "contenu": "Devenir une référence dans votre niche, LinkedIn, podcasts, collaborations stratégiques.",
+          "gratuit": false
+        },
+        {
+          "id": 6,
+          "titre": "Copywriting qui convertit",
+          "duree": "75 min",
+          "contenu": "Méthodes AIDA, PAS, storytelling. Écrire des textes qui vendent.",
+          "gratuit": false
+        }
+      ]
+    },
+    {
+      "id": "mkt-premium",
+      "categorie": "Marketing Digital",
+      "titre": "Marketing Digital — Premium",
+      "sous_titre": "Le programme complet pour devenir expert",
+      "prix": 200,
+      "formule": "premium",
+      "badge": "Premium",
+      "image": "👑",
+      "description": "La formation la plus complète du marché. Tout ce qu'il faut pour devenir un expert reconnu.",
+      "modules_gratuits": 2,
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Stratégie 360° & Positionnement",
+          "duree": "90 min",
+          "contenu": "Construire une stratégie omnicanal complète, analyse concurrentielle avancée.",
+          "gratuit": true
+        },
+        {
+          "id": 2,
+          "titre": "Google Ads Mastery",
+          "duree": "120 min",
+          "contenu": "Search, Display, Shopping, Performance Max. Maîtriser chaque format publicitaire Google.",
+          "gratuit": true
+        },
+        {
+          "id": 3,
+          "titre": "Meta Ads Expert",
+          "duree": "110 min",
+          "contenu": "Facebook & Instagram Ads, Pixel, audiences lookalike, scaling de campagnes.",
+          "gratuit": false
+        },
+        {
+          "id": 4,
+          "titre": "TikTok & YouTube Ads",
+          "duree": "90 min",
+          "contenu": "Les nouvelles plateformes publicitaires, créer des créatifs vidéo performants.",
+          "gratuit": false
+        },
+        {
+          "id": 5,
+          "titre": "Data & Analytics Avancé",
+          "duree": "100 min",
+          "contenu": "GA4, Looker Studio, attribution multi-touch, dashboards personnalisés.",
+          "gratuit": false
+        },
+        {
+          "id": 6,
+          "titre": "Vendre vos services Marketing",
+          "duree": "80 min",
+          "contenu": "Créer votre agence, trouver vos premiers clients, tarifer vos prestations.",
+          "gratuit": false
+        },
+        {
+          "id": 7,
+          "titre": "Consultation illimitée (1 mois)",
+          "duree": "∞",
+          "contenu": "Accès direct par email pour toutes vos questions pendant 1 mois.",
+          "gratuit": false
+        }
+      ]
+    },
+    {
+      "id": "ecom-standard",
+      "categorie": "E-commerce",
+      "titre": "E-commerce — Standard",
+      "sous_titre": "Lancer votre boutique en ligne de A à Z",
+      "prix": 100,
+      "formule": "standard",
+      "badge": "Nouveau",
+      "image": "🛒",
+      "description": "Créez et lancez votre boutique e-commerce rentable. De la sélection produit à la première vente.",
+      "modules_gratuits": 1,
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Choisir son modèle E-commerce",
+          "duree": "60 min",
+          "contenu": "Dropshipping, print-on-demand, produits physiques, digital. Choisir le bon modèle pour vous.",
+          "gratuit": true
+        },
+        {
+          "id": 2,
+          "titre": "Trouver des produits gagnants",
+          "duree": "75 min",
+          "contenu": "Recherche produit, validation de marché, outils (Minea, Adspy), tendances.",
+          "gratuit": false
+        },
+        {
+          "id": 3,
+          "titre": "Créer sa boutique Shopify",
+          "duree": "90 min",
+          "contenu": "Configuration complète, thème, fiches produits optimisées, checkout.",
+          "gratuit": false
+        },
+        {
+          "id": 4,
+          "titre": "Fournisseurs & Logistique",
+          "duree": "60 min",
+          "contenu": "AliExpress, agents sourcing, délais de livraison, gestion des retours.",
+          "gratuit": false
+        },
+        {
+          "id": 5,
+          "titre": "Premiers clients sans pub",
+          "duree": "50 min",
+          "contenu": "Réseaux sociaux organiques, groupes Facebook, micro-influenceurs, SEO produit.",
+          "gratuit": false
+        }
+      ]
+    },
+    {
+      "id": "ecom-premium",
+      "categorie": "E-commerce",
+      "titre": "E-commerce — Premium",
+      "sous_titre": "Scaler une boutique à 6 chiffres",
+      "prix": 150,
+      "formule": "premium",
+      "badge": "Expert",
+      "image": "💎",
+      "description": "Les stratégies des e-commerçants qui génèrent plus de 100k€/mois.",
+      "modules_gratuits": 2,
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Ads E-commerce (Facebook + TikTok)",
+          "duree": "120 min",
+          "contenu": "Structurer ses campagnes, créatifs vidéo, tester et scaler rapidement.",
+          "gratuit": true
+        },
+        {
+          "id": 2,
+          "titre": "Optimisation du taux de conversion",
+          "duree": "90 min",
+          "contenu": "Pages produit, checkout, social proof, urgence, upsells post-achat.",
+          "gratuit": true
+        },
+        {
+          "id": 3,
+          "titre": "Email & SMS Marketing E-com",
+          "duree": "80 min",
+          "contenu": "Flows Klaviyo (abandon panier, post-achat, winback), segmentation, campagnes.",
+          "gratuit": false
+        },
+        {
+          "id": 4,
+          "titre": "Sourcing & Private Label",
+          "duree": "70 min",
+          "contenu": "Passer en marque propre, négocier avec des usines, créer sa marque.",
+          "gratuit": false
+        },
+        {
+          "id": 5,
+          "titre": "Scaling & Automatisation",
+          "duree": "85 min",
+          "contenu": "Déléguer, systèmes, SOPs, recruter une équipe, vendre sa boutique.",
+          "gratuit": false
+        },
+        {
+          "id": 6,
+          "titre": "Comptabilité & Fiscalité E-com",
+          "duree": "60 min",
+          "contenu": "TVA, structures juridiques, optimisation fiscale pour e-commerçants.",
+          "gratuit": false
+        }
+      ]
+    },
+    {
+      "id": "trading-standard",
+      "categorie": "Trading",
+      "titre": "Trading — Standard",
+      "sous_titre": "Les bases pour trader intelligemment",
+      "prix": 100,
+      "formule": "standard",
+      "badge": "Populaire",
+      "image": "📈",
+      "description": "Apprenez les fondamentaux du trading et évitez les erreurs des débutants.",
+      "modules_gratuits": 1,
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Introduction aux marchés financiers",
+          "duree": "70 min",
+          "contenu": "Forex, crypto, indices, matières premières. Comment fonctionnent les marchés.",
+          "gratuit": true
+        },
+        {
+          "id": 2,
+          "titre": "Analyse technique — Bases",
+          "duree": "90 min",
+          "contenu": "Chandeliers japonais, supports/résistances, tendances, figures chartistes.",
+          "gratuit": false
+        },
+        {
+          "id": 3,
+          "titre": "Gestion du risque",
+          "duree": "60 min",
+          "contenu": "Stop-loss, position sizing, ratio risk/reward. Ne jamais brûler son capital.",
+          "gratuit": false
+        },
+        {
+          "id": 4,
+          "titre": "Votre première stratégie de trading",
+          "duree": "80 min",
+          "contenu": "Construire, tester et backtester une stratégie simple et reproductible.",
+          "gratuit": false
+        },
+        {
+          "id": 5,
+          "titre": "Psychologie du trader",
+          "duree": "50 min",
+          "contenu": "Émotions, biais cognitifs, discipline. Le mental est 80% du succès en trading.",
+          "gratuit": false
+        }
+      ]
+    },
+    {
+      "id": "trading-premium",
+      "categorie": "Trading",
+      "titre": "Trading — Premium",
+      "sous_titre": "Devenir trader professionnel",
+      "prix": 200,
+      "formule": "premium",
+      "badge": "Pro",
+      "image": "⚡",
+      "description": "Les méthodes des traders professionnels. Smart Money Concepts, Price Action avancée.",
+      "modules_gratuits": 2,
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Smart Money Concepts (SMC)",
+          "duree": "120 min",
+          "contenu": "Order blocks, FVG, liquidity sweeps, BOS/CHOCH. Trader avec les institutionnels.",
+          "gratuit": true
+        },
+        {
+          "id": 2,
+          "titre": "Price Action Avancée",
+          "duree": "100 min",
+          "contenu": "Lecture de marché nue, confluences, setups haute probabilité.",
+          "gratuit": true
+        },
+        {
+          "id": 3,
+          "titre": "Trading algorithmique (débutant)",
+          "duree": "90 min",
+          "contenu": "Premiers scripts TradingView Pine Script, automatiser ses alertes.",
+          "gratuit": false
+        },
+        {
+          "id": 4,
+          "titre": "Crypto Trading & DeFi",
+          "duree": "80 min",
+          "contenu": "Altcoins, on-chain analysis, DeFi, staking. Opportunités hors Forex.",
+          "gratuit": false
+        },
+        {
+          "id": 5,
+          "titre": "Gestion de portefeuille",
+          "duree": "70 min",
+          "contenu": "Diversification, corrélations, rééquilibrage, fiscalité des gains.",
+          "gratuit": false
+        },
+        {
+          "id": 6,
+          "titre": "Vivre du trading — Business Plan",
+          "duree": "90 min",
+          "contenu": "Prop firms, gérer un compte financé, construire un track record.",
+          "gratuit": false
+        }
+      ]
+    },
+    {
+      "id": "ofm-standard",
+      "categorie": "OFM IA",
+      "titre": "OFM IA — Standard",
+      "sous_titre": "Générer des revenus avec l'IA et OnlyFans Management",
+      "prix": 100,
+      "formule": "standard",
+      "badge": "Tendance",
+      "image": "🤖",
+      "description": "Découvrez le modèle OFM IA : gérer des comptes avec l'intelligence artificielle.",
+      "modules_gratuits": 1,
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Introduction à l'OFM & l'IA",
+          "duree": "60 min",
+          "contenu": "Comprendre le modèle, le marché, les opportunités et les règles à connaître.",
+          "gratuit": true
+        },
+        {
+          "id": 2,
+          "titre": "Trouver et recruter des créatrices",
+          "duree": "70 min",
+          "contenu": "Scripts de prospection, plateformes, comment convaincre, contrats.",
+          "gratuit": false
+        },
+        {
+          "id": 3,
+          "titre": "Gérer un compte avec l'IA",
+          "duree": "90 min",
+          "contenu": "ChatGPT pour la rédaction, Midjourney pour les visuels, automatisation des messages.",
+          "gratuit": false
+        },
+        {
+          "id": 4,
+          "titre": "Marketing & Acquisition fans",
+          "duree": "80 min",
+          "contenu": "Reddit, Twitter/X, TikTok, collaborations. Faire croître une audience rapidement.",
+          "gratuit": false
+        },
+        {
+          "id": 5,
+          "titre": "Finances & Organisation",
+          "duree": "50 min",
+          "contenu": "Revenus, commissions, structure juridique, gérer plusieurs comptes.",
+          "gratuit": false
+        }
+      ]
+    },
+    {
+      "id": "ofm-premium",
+      "categorie": "OFM IA",
+      "titre": "OFM IA — Premium",
+      "sous_titre": "Scaler une agence OFM à 5 chiffres/mois",
+      "prix": 200,
+      "formule": "premium",
+      "badge": "Premium",
+      "image": "🏆",
+      "description": "Construisez une vraie agence OFM avec plusieurs créatrices et des systèmes automatisés.",
+      "modules_gratuits": 2,
+      "modules": [
+        {
+          "id": 1,
+          "titre": "Construire son agence OFM",
+          "duree": "90 min",
+          "contenu": "Structure, modèles de contrats, outils de gestion, systèmes scalables.",
+          "gratuit": true
+        },
+        {
+          "id": 2,
+          "titre": "IA Avancée pour l'OFM",
+          "duree": "100 min",
+          "contenu": "Personas IA, génération de contenu automatisée, chatbots de vente.",
+          "gratuit": true
+        },
+        {
+          "id": 3,
+          "titre": "Scaling — Gérer 5+ créatrices",
+          "duree": "80 min",
+          "contenu": "Déléguer, recruter des chatters, SOPs, reporting, automatisation.",
+          "gratuit": false
+        },
+        {
+          "id": 4,
+          "titre": "Stratégies de monétisation avancées",
+          "duree": "75 min",
+          "contenu": "PPV, tips, livestreams, bundles, collaborations entre créatrices.",
+          "gratuit": false
+        },
+        {
+          "id": 5,
+          "titre": "Personal Branding & Réputation",
+          "duree": "60 min",
+          "contenu": "Gérer sa réputation, se protéger, construire une marque durable.",
+          "gratuit": false
+        },
+        {
+          "id": 6,
+          "titre": "Mentoring individuel (2 sessions)",
+          "duree": "∞",
+          "contenu": "2 sessions de coaching individuel de 45 min pour booster vos résultats.",
+          "gratuit": false
+        }
+      ]
+    }
+  ]
+}

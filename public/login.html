@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS — Connexion</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400&family=DM+Mono:wght@300;400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav id="navbar">
+  <a href="/" class="nav-logo">NEX<span>US</span></a>
+  <ul class="nav-links">
+    <li><a href="/formations.html">Formations</a></li>
+  </ul>
+  <div class="nav-auth"></div>
+</nav>
+
+<div class="auth-page">
+  <div class="auth-box">
+    <div class="auth-logo">NEX<span>US</span></div>
+
+    <!-- Connexion -->
+    <div id="loginForm">
+      <h2 class="auth-title">Connexion</h2>
+      <p class="auth-sub">Accédez à votre espace membre et à vos formations.</p>
+      <div class="error-msg" id="loginErr"></div>
+      <div class="form-group"><label>Email</label><input type="email" id="lEmail" placeholder="jean@email.fr"></div>
+      <div class="form-group"><label>Mot de passe</label><input type="password" id="lPass" placeholder="••••••••"></div>
+      <button class="btn-submit" style="margin-top:28px;width:100%;text-align:center;" onclick="doLogin()">Se connecter</button>
+      <p class="auth-switch">Pas encore de compte ? <a href="#" onclick="toggle()">S'inscrire</a></p>
+    </div>
+
+    <!-- Inscription -->
+    <div id="registerForm" style="display:none;">
+      <h2 class="auth-title">Inscription</h2>
+      <p class="auth-sub">Créez votre compte et accédez aux formations NEXUS.</p>
+      <div class="error-msg" id="regErr"></div>
+      <div class="success-msg" id="regOk"></div>
+      <div class="form-group"><label>Nom complet</label><input type="text" id="rNom" placeholder="Jean Dupont"></div>
+      <div class="form-group"><label>Email</label><input type="email" id="rEmail" placeholder="jean@email.fr"></div>
+      <div class="form-group"><label>Mot de passe</label><input type="password" id="rPass" placeholder="Min. 6 caractères"></div>
+      <button class="btn-submit" style="margin-top:28px;width:100%;text-align:center;" onclick="doRegister()">Créer mon compte</button>
+      <p class="auth-switch">Déjà un compte ? <a href="#" onclick="toggle()">Se connecter</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="/js/global.js"></script>
+<script>
+  // Redirect if already logged in
+  if (localStorage.getItem('nexus_token')) window.location.href = '/dashboard.html';
+
+  // Check URL mode
+  const params = new URLSearchParams(location.search);
+  if (params.get('mode') === 'register') toggle();
+
+  function toggle() {
+    const l = document.getElementById('loginForm');
+    const r = document.getElementById('registerForm');
+    l.style.display = l.style.display === 'none' ? 'block' : 'none';
+    r.style.display = r.style.display === 'none' ? 'block' : 'none';
+  }
+
+  function showErr(id, msg) {
+    const el = document.getElementById(id);
+    el.textContent = msg;
+    el.style.display = 'block';
+    setTimeout(() => el.style.display = 'none', 5000);
+  }
+
+  async function doLogin() {
+    const email = document.getElementById('lEmail').value.trim();
+    const password = document.getElementById('lPass').value;
+    if (!email || !password) return showErr('loginErr', 'Remplissez tous les champs.');
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+      const data = await res.json();
+      if (!res.ok) return showErr('loginErr', data.error || 'Erreur de connexion');
+      localStorage.setItem('nexus_token', data.token);
+      localStorage.setItem('nexus_user', JSON.stringify(data.user));
+      window.location.href = '/dashboard.html';
+    } catch { showErr('loginErr', 'Erreur réseau. Serveur démarré ?'); }
+  }
+
+  async function doRegister() {
+    const nom = document.getElementById('rNom').value.trim();
+    const email = document.getElementById('rEmail').value.trim();
+    const password = document.getElementById('rPass').value;
+    if (!nom || !email || !password) return showErr('regErr', 'Remplissez tous les champs.');
+    if (password.length < 6) return showErr('regErr', 'Mot de passe trop court (min. 6 caractères).');
+    try {
+      const res = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nom, email, password })
+      });
+      const data = await res.json();
+      if (!res.ok) return showErr('regErr', data.error || 'Erreur inscription');
+      localStorage.setItem('nexus_token', data.token);
+      localStorage.setItem('nexus_user', JSON.stringify(data.user));
+      window.location.href = '/dashboard.html';
+    } catch { showErr('regErr', 'Erreur réseau. Serveur démarré ?'); }
+  }
+
+  // Enter key support
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      if (document.getElementById('loginForm').style.display !== 'none') doLogin();
+      else doRegister();
+    }
+  });
+</script>
+</body>
+</html>

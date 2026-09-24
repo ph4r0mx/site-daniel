@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS — Module</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600&family=DM+Mono:wght@300;400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/global.css">
+<style>
+  .module-page { max-width: 860px; margin: 0 auto; padding: 120px 40px 80px; }
+  .module-breadcrumb { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); margin-bottom: 40px; }
+  .module-breadcrumb a { color: var(--gold); text-decoration: none; }
+  .module-breadcrumb span { margin: 0 10px; }
+  .module-header { border-bottom: 1px solid var(--border); padding-bottom: 40px; margin-bottom: 60px; }
+  .module-tag { font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+  .module-tag::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+  .module-h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(32px, 4vw, 52px); line-height: 1.1; margin-bottom: 20px; }
+  .module-meta { display: flex; gap: 24px; align-items: center; }
+  .module-duree { font-size: 11px; color: var(--muted); letter-spacing: 0.15em; }
+  .btn-pdf { display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; border: 1px solid var(--gold); color: var(--gold); font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; text-decoration: none; transition: all 0.3s; cursor: none; }
+  .btn-pdf:hover { background: var(--gold); color: #000; }
+
+  /* Contenu */
+  .content-block { margin-bottom: 40px; }
+  .content-intro { font-size: 16px; line-height: 1.9; color: #c0b89a; font-family: 'Cormorant Garamond', serif; font-weight: 400; border-left: 2px solid var(--gold); padding-left: 24px; }
+  .content-titre { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 18px; margin-bottom: 20px; margin-top: 48px; color: var(--white); }
+  .content-liste { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .content-liste li { font-size: 13px; line-height: 1.7; color: var(--muted); padding-left: 20px; position: relative; }
+  .content-liste li::before { content: '—'; position: absolute; left: 0; color: var(--gold); }
+  .content-etapes { list-style: none; display: flex; flex-direction: column; gap: 0; counter-reset: step; }
+  .content-etapes li { font-size: 13px; line-height: 1.7; color: var(--muted); padding: 16px 0 16px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: step; }
+  .content-etapes li::before { content: counter(step, decimal-leading-zero); position: absolute; left: 0; top: 14px; font-family: 'DM Mono', monospace; font-size: 11px; color: var(--gold); letter-spacing: 0.1em; }
+  .content-carte { border: 1px solid var(--border2); padding: 28px 32px; margin-bottom: 16px; background: var(--bg2); }
+  .content-carte-titre { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; color: var(--white); margin-bottom: 14px; }
+  .content-carte ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .content-carte ul li { font-size: 12px; color: var(--muted); line-height: 1.6; padding-left: 16px; position: relative; }
+  .content-carte ul li::before { content: '·'; position: absolute; left: 0; color: var(--gold); font-size: 18px; line-height: 1; top: 2px; }
+  .content-tableau { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .content-tableau th { padding: 12px 16px; text-align: left; font-family: 'Syne', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid var(--border); }
+  .content-tableau td { padding: 12px 16px; color: var(--muted); border-bottom: 1px solid var(--border); line-height: 1.6; }
+  .content-tableau tr:hover td { color: var(--white); background: var(--bg2); }
+  .content-exercice { background: rgba(201,169,110,0.06); border: 1px solid rgba(201,169,110,0.3); padding: 32px; margin-top: 48px; }
+  .content-exercice-titre { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; color: var(--gold); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .content-exercice ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .content-exercice ul li { font-size: 13px; color: var(--muted); padding-left: 20px; position: relative; }
+  .content-exercice ul li::before { content: '✏'; position: absolute; left: 0; }
+
+  /* Navigation modules */
+  .module-nav { display: flex; justify-content: space-between; margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--border); }
+  .module-nav a { display: flex; align-items: center; gap: 12px; text-decoration: none; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); transition: color 0.3s; }
+  .module-nav a:hover { color: var(--gold); }
+  .nav-label { font-size: 9px; letter-spacing: 0.3em; color: var(--gold); margin-bottom: 4px; }
+  .nav-titre { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; color: var(--white); }
+  .loading-state { text-align: center; padding: 100px 0; color: var(--muted); }
+</style>
+</head>
+<body>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav id="navbar" class="scrolled">
+  <a href="/" class="nav-logo">NEX<span>US</span></a>
+  <ul class="nav-links">
+    <li><a href="/dashboard">Mon espace</a></li>
+    <li><a href="/formations.html">Catalogue</a></li>
+  </ul>
+  <div class="nav-auth" id="navAuth"></div>
+</nav>
+
+<div class="module-page">
+  <div id="modulePageContent">
+    <div class="loading-state">Chargement du module...</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-copy">© 2025 NEXUS Formations</div>
+  <div class="footer-links">
+    <a href="/dashboard">Mon espace</a>
+    <a href="/formations.html">Catalogue</a>
+  </div>
+</footer>
+
+<script src="/js/global.js"></script>
+<script>
+const token = getToken();
+if (!token) window.location.href = '/login.html';
+
+const params = new URLSearchParams(location.search);
+const formationId = params.get('f');
+const moduleId = parseInt(params.get('m'));
+
+let formationData = null;
+
+async function loadModule() {
+  if (!formationId || !moduleId) { window.location.href = '/dashboard'; return; }
+
+  try {
+    // Charger la formation pour avoir la liste des modules
+    const [fRes, cRes] = await Promise.all([
+      fetch('/api/formations/' + formationId, { headers: { Authorization: 'Bearer ' + token } }),
+      fetch(`/api/content/${formationId}/${moduleId}`, { headers: { Authorization: 'Bearer ' + token } })
+    ]);
+
+    formationData = await fRes.json();
+
+    if (!fRes.ok || !formationData.acces) {
+      // Vérifier si module gratuit
+      const module = formationData.modules?.find(m => m.id === moduleId);
+      if (!module?.gratuit) {
+        window.location.href = '/formations.html';
+        return;
+      }
+    }
+
+    if (!cRes.ok) {
+      renderNoContent();
+      return;
+    }
+
+    const content = await cRes.json();
+    renderModule(content);
+
+  } catch(e) {
+    console.error(e);
+    renderNoContent();
+  }
+}
+
+function renderModule(data) {
+  const currentModule = formationData.modules.find(m => m.id === moduleId);
+  const prevModule = formationData.modules.find(m => m.id === moduleId - 1);
+  const nextModule = formationData.modules.find(m => m.id === moduleId + 1);
+
+  let html = `
+    <div class="module-breadcrumb">
+      <a href="/dashboard">Mon espace</a>
+      <span>→</span>
+      <a href="/dashboard">${formationData.titre}</a>
+      <span>→</span>
+      Module ${moduleId}
+    </div>
+    <div class="module-header">
+      <div class="module-tag">Module ${String(moduleId).padStart(2,'0')} — ${formationData.categorie}</div>
+      <h1 class="module-h1">${data.module}</h1>
+      <div class="module-meta">
+        <span class="module-duree">⏱ ${data.duree}</span>
+        <button class="btn-pdf" onclick="downloadPDF()">⬇ Télécharger en PDF</button>
+      </div>
+    </div>
+    <div id="moduleBody">
+  `;
+
+  // Render sections
+  data.contenu.sections.forEach(section => {
+    html += renderSection(section);
+  });
+
+  html += `</div>`;
+
+  // Navigation
+  html += `<div class="module-nav">`;
+  if (prevModule) {
+    html += `<a href="/module?f=${formationId}&m=${prevModule.id}">
+      <span>←</span>
+      <div>
+        <div class="nav-label">Module précédent</div>
+        <div class="nav-titre">${prevModule.titre}</div>
+      </div>
+    </a>`;
+  } else { html += '<div></div>'; }
+
+  if (nextModule) {
+    const nextLocked = nextModule.verrouille;
+    if (!nextLocked) {
+      html += `<a href="/module?f=${formationId}&m=${nextModule.id}">
+        <div style="text-align:right">
+          <div class="nav-label">Module suivant</div>
+          <div class="nav-titre">${nextModule.titre}</div>
+        </div>
+        <span>→</span>
+      </a>`;
+    } else {
+      html += `<a href="/formations.html" style="opacity:0.5">
+        <div style="text-align:right">
+          <div class="nav-label">🔒 Débloquer</div>
+          <div class="nav-titre">${nextModule.titre}</div>
+        </div>
+        <span>→</span>
+      </a>`;
+    }
+  } else { html += '<div></div>'; }
+
+  html += `</div>`;
+
+  document.getElementById('modulePageContent').innerHTML = html;
+  document.title = `NEXUS — ${data.module}`;
+}
+
+function renderSection(s) {
+  switch(s.type) {
+    case 'intro':
+      return `<div class="content-block"><p class="content-intro">${s.texte}</p></div>`;
+    case 'titre':
+      return `<h2 class="content-titre">${s.texte}</h2>`;
+    case 'liste':
+      return `<ul class="content-liste">${s.items.map(i => `<li>${i}</li>`).join('')}</ul>`;
+    case 'etapes':
+      return `<ol class="content-etapes">${s.items.map(i => `<li>${i}</li>`).join('')}</ol>`;
+    case 'carte':
+      return `<div class="content-carte">
+        <div class="content-carte-titre">${s.titre}</div>
+        <ul>${s.items.map(i => `<li>${i}</li>`).join('')}</ul>
+      </div>`;
+    case 'tableau':
+      return `<div style="overflow-x:auto;margin-bottom:24px;">
+        <table class="content-tableau">
+          <thead><tr>${s.colonnes.map(c => `<th>${c}</th>`).join('')}</tr></thead>
+          <tbody>${s.lignes.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody>
+        </table>
+      </div>`;
+    case 'exercice':
+      return `<div class="content-exercice">
+        <div class="content-exercice-titre">✏️ Exercice pratique — ${s.texte}</div>
+        <ul>${s.items.map(i => `<li>${i}</li>`).join('')}</ul>
+      </div>`;
+    default: return '';
+  }
+}
+
+function renderNoContent() {
+  document.getElementById('modulePageContent').innerHTML = `
+    <div style="text-align:center;padding:80px 0;color:var(--muted);">
+      <div style="font-size:48px;margin-bottom:24px;">📋</div>
+      <p style="font-size:16px;margin-bottom:8px;color:var(--white);">Contenu en cours de préparation</p>
+      <p style="font-size:13px;">Ce module sera disponible très prochainement.</p>
+      <a href="/dashboard" style="display:inline-block;margin-top:32px;" class="btn-access">← Retour au dashboard</a>
+    </div>
+  `;
+}
+
+function downloadPDF() {
+  // Génère un PDF simple via impression
+  window.print();
+}
+
+loadModule();
+</script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS — Mon espace</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400&family=DM+Mono:wght@300;400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/global.css">
+<style>
+  .tag-gratuit{display:inline-block;padding:2px 8px;border:1px solid var(--gold);color:var(--gold);font-size:9px;letter-spacing:.3em;text-transform:uppercase;margin-left:8px;vertical-align:middle}
+  .tag-verr{display:inline-block;padding:2px 8px;border:1px solid var(--muted);color:var(--muted);font-size:9px;letter-spacing:.3em;text-transform:uppercase;margin-left:8px;vertical-align:middle}
+  .free-banner{background:rgba(201,169,110,.08);border:1px solid rgba(201,169,110,.3);padding:14px 20px;margin-bottom:24px;font-size:12px;color:var(--gold)}
+  .free-banner a{color:var(--gold)}
+  .module-item{padding:18px 0;border-bottom:1px solid var(--border);display:flex;gap:20px;align-items:center;transition:padding .2s}
+  .module-item:first-child{border-top:1px solid var(--border)}
+  .module-item:not(.verrouille){cursor:none}
+  .module-item:not(.verrouille):hover{padding-left:8px}
+  .module-item.verrouille{opacity:.4}
+  .module-num{font-size:10px;letter-spacing:.3em;color:var(--gold);min-width:28px}
+  .module-item.verrouille .module-num{color:var(--muted)}
+  .module-info{flex:1}
+  .module-titre{font-family:'Syne',sans-serif;font-weight:700;font-size:13px;margin-bottom:4px}
+  .module-duree{font-size:10px;color:var(--muted);letter-spacing:.15em}
+  .module-arrow{color:var(--gold);font-size:16px;transition:transform .2s}
+  .module-item:not(.verrouille):hover .module-arrow{transform:translateX(4px)}
+  .formation-section{margin-bottom:40px;padding:40px;border:1px solid var(--border);background:var(--bg2)}
+  .formation-section-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--border)}
+  .formation-icon{font-size:36px;margin-bottom:8px}
+  .formation-cat{font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+  .formation-name{font-family:'Syne',sans-serif;font-weight:700;font-size:18px}
+  .success-banner{background:rgba(201,169,110,.15);border:1px solid var(--gold);padding:20px 28px;margin-bottom:40px;font-size:13px;color:var(--gold);display:none}
+</style>
+</head>
+<body>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav id="navbar" class="scrolled">
+  <a href="/" class="nav-logo">NEX<span>US</span></a>
+  <ul class="nav-links">
+    <li><a href="/formations.html">Catalogue</a></li>
+  </ul>
+  <div class="nav-auth">
+    <button class="dash-logout" onclick="logout()">Déconnexion →</button>
+  </div>
+</nav>
+
+<div class="dashboard">
+  <div class="dash-header">
+    <div>
+      <div style="font-size:10px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">— Espace membre</div>
+      <h1 class="dash-welcome">Bonjour,<br><em id="dashName">...</em></h1>
+    </div>
+    <button class="dash-logout" onclick="logout()">Se déconnecter →</button>
+  </div>
+
+  <div id="successBanner" class="success-banner">
+    🎉 Paiement confirmé ! Votre formation est maintenant accessible.
+  </div>
+
+  <div id="dashContent"><div style="color:var(--muted);font-size:13px;">Chargement...</div></div>
+</div>
+
+<footer>
+  <div class="footer-copy">© 2025 NEXUS Formations</div>
+  <div class="footer-links"><a href="/">Accueil</a><a href="/formations.html">Catalogue</a></div>
+</footer>
+
+<script src="/js/global.js"></script>
+<script>
+const token = getToken();
+if (!token) window.location.href = '/login.html';
+
+async function loadDashboard() {
+  // Vérifier paiement Stripe si retour depuis Stripe
+  const params = new URLSearchParams(location.search);
+  if (params.get('success') === 'true' && params.get('session_id') && params.get('formation')) {
+    try {
+      await fetch('/api/payment/verify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + token },
+        body: JSON.stringify({ session_id: params.get('session_id'), formation_id: params.get('formation') })
+      });
+      document.getElementById('successBanner').style.display = 'block';
+    } catch(e) {}
+    history.replaceState({}, '', '/dashboard');
+  }
+
+  try {
+    const [meRes, formRes] = await Promise.all([
+      fetch('/api/auth/me', { headers: { Authorization: 'Bearer ' + token } }),
+      fetch('/api/formations')
+    ]);
+    if (!meRes.ok) { logout(); return; }
+
+    const userData = await meRes.json();
+    const allFormations = await formRes.json();
+    const userFormations = userData.formations || [];
+
+    document.getElementById('dashName').textContent = userData.nom;
+    localStorage.setItem('nexus_user', JSON.stringify(userData));
+
+    const owned = allFormations.filter(f => userFormations.includes(f.id));
+    const notOwned = allFormations.filter(f => !userFormations.includes(f.id));
+
+    let html = '';
+
+    if (owned.length > 0) {
+      html += `<div style="margin-bottom:16px;"><div class="dash-section-title">Mes formations — Accès complet</div></div>`;
+      owned.forEach(f => {
+        html += `
+          <div class="formation-section">
+            <div class="formation-section-header">
+              <div>
+                <div class="formation-icon">${f.image}</div>
+                <div class="formation-cat">${f.categorie}</div>
+                <div class="formation-name">${f.titre}</div>
+                <div style="font-size:11px;color:var(--muted);margin-top:8px;">${f.nb_modules} modules • Accès complet</div>
+              </div>
+            </div>
+            <div>${renderModules(f, true)}</div>
+          </div>
+        `;
+      });
+    }
+
+    html += `<div style="margin-top:60px;padding-top:60px;border-top:1px solid var(--border);">`;
+    html += `<div class="dash-section-title">Aperçus gratuits</div>`;
+    html += `<p style="font-size:12px;color:var(--muted);margin-bottom:32px;">Accédez gratuitement aux premiers modules de chaque formation.</p>`;
+    notOwned.forEach(f => {
+      html += `
+        <div class="formation-section" style="opacity:.85">
+          <div class="formation-section-header">
+            <div>
+              <div class="formation-icon">${f.image}</div>
+              <div class="formation-cat">${f.categorie}</div>
+              <div class="formation-name">${f.titre}</div>
+              <div style="font-size:11px;color:var(--gold);margin-top:8px;">🎁 ${f.modules_gratuits} module${f.modules_gratuits > 1 ? 's' : ''} gratuit${f.modules_gratuits > 1 ? 's' : ''} sur ${f.nb_modules}</div>
+            </div>
+            <a href="/formations.html" class="btn-access">Débloquer — ${f.prix}€ →</a>
+          </div>
+          <div class="free-banner">🎁 ${f.modules_gratuits} module${f.modules_gratuits > 1 ? 's gratuits' : ' gratuit'} accessible${f.modules_gratuits > 1 ? 's' : ''} — <a href="/formations.html">Acheter pour tout débloquer →</a></div>
+          <div>${renderModules(f, false)}</div>
+        </div>
+      `;
+    });
+    html += `</div>`;
+
+    document.getElementById('dashContent').innerHTML = html;
+  } catch(e) { console.error(e); }
+}
+
+function renderModules(f, fullAccess) {
+  let html = '';
+  f.apercu.forEach(m => {
+    html += `
+      <div class="module-item" onclick="location.href='/module?f=${f.id}&m=${m.id}'">
+        <div class="module-num">0${m.id}</div>
+        <div class="module-info">
+          <div class="module-titre">${m.titre} ${!fullAccess ? '<span class="tag-gratuit">Gratuit</span>' : ''}</div>
+          <div class="module-duree">⏱ ${m.duree}</div>
+        </div>
+        <div class="module-arrow">→</div>
+      </div>
+    `;
+  });
+  for (let i = f.modules_gratuits + 1; i <= f.nb_modules; i++) {
+    if (fullAccess) {
+      html += `
+        <div class="module-item" onclick="location.href='/module?f=${f.id}&m=${i}'">
+          <div class="module-num">0${i}</div>
+          <div class="module-info">
+            <div class="module-titre">Module ${i}</div>
+            <div class="module-duree">Cliquez pour accéder</div>
+          </div>
+          <div class="module-arrow">→</div>
+        </div>
+      `;
+    } else {
+      html += `
+        <div class="module-item verrouille">
+          <div class="module-num">0${i}</div>
+          <div class="module-info">
+            <div class="module-titre">Module ${i} <span class="tag-verr">🔒 Verrouillé</span></div>
+            <div class="module-duree">Achetez la formation pour accéder</div>
+          </div>
+        </div>
+      `;
+    }
+  }
+  return html;
+}
+
+loadDashboard();
+</script>
+</body>
+</html>
