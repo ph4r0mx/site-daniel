@@ -1,17 +1,31 @@
-const fs = require('fs');
-const path = require('path');
-const DB_PATH = path.join(__dirname, '../data/db.json');
-const CONTENT_PATH = path.join(__dirname, '../data/content.json');
+require('dotenv').config();
+const { createClient } = require('@supabase/supabase-js');
 
-function readDB() {
-  const db = JSON.parse(fs.readFileSync(DB_PATH, 'utf-8'));
-  if (fs.existsSync(CONTENT_PATH)) {
-    db.content = JSON.parse(fs.readFileSync(CONTENT_PATH, 'utf-8'));
-  }
-  return db;
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
+);
+
+// Récupérer toutes les données nécessaires au fonctionnement actuel
+async function readDB() {
+  const [usersResult, formationsResult, ordersResult] = await Promise.all([
+    supabase.from('users').select('*'),
+    supabase.from('formations').select('*'),
+    supabase.from('orders').select('*')
+  ]);
+
+  if (usersResult.error) throw usersResult.error;
+  if (formationsResult.error) throw formationsResult.error;
+  if (ordersResult.error) throw ordersResult.error;
+
+  return {
+    users: usersResult.data,
+    formations: formationsResult.data,
+    orders: ordersResult.data
+  };
 }
-function writeDB(data) {
-  const { content, ...dbOnly } = data;
-  fs.writeFileSync(DB_PATH, JSON.stringify(dbOnly, null, 2));
-}
-module.exports = { readDB, writeDB };
+
+module.exports = {
+  supabase,
+  readDB
+};
