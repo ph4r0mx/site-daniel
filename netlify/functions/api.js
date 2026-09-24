@@ -1,4 +1,12 @@
-const serverless = require('serverless-http');
-const app = require('../../server');
-
-module.exports.handler = serverless(app);
+exports.handler = async () => {
+  return {
+    statusCode: 200,
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      status: 'OK',
+      message: 'Netlify Function fonctionne'
+    })
+  };
+};
